@@ -786,7 +786,16 @@
         "value": "San Francisco, CA",
         "href": "#"
       }
-    ]
+    ],
+    "form": {
+      "provider": "formspree",
+      "endpoint": "",
+      "successMessage": "Thanks! Your message has been sent.",
+      "errorMessage": "Something went wrong. Please try again or email me directly.",
+      "unconfiguredMessage": "The contact form is not configured yet. Please email me directly.",
+      "sendingLabel": "Sending...",
+      "sentLabel": "Sent!"
+    }
   },
   "nav": {
     "links": [

@@ -694,16 +694,42 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   buildSocials(document.getElementById('contact-socials'));
 
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
+  const contactForm = document.getElementById('contact-form');
+  const contactSettings = p.contact.form || {};
+  const contactSuccess = document.getElementById('cf-success');
+  const contactError = document.getElementById('cf-error');
+  const contactSubmit = document.getElementById('cf-submit');
+  const contactSubmitLabel = ui.contactSubmitLabel || 'Send Message';
+  contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
-    const btn = document.getElementById('cf-submit');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...'; btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-      document.getElementById('cf-success').classList.remove('hidden');
-      this.reset();
-      setTimeout(() => { btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message'; btn.disabled = false; document.getElementById('cf-success').classList.add('hidden'); }, 4000);
-    }, 1500);
+    contactSuccess.classList.add('hidden');
+    contactError.classList.add('hidden');
+    if (contactSettings.provider !== 'formspree' || !contactSettings.endpoint) {
+      contactError.textContent = contactSettings.unconfiguredMessage || 'The contact form is not configured yet.';
+      contactError.classList.remove('hidden');
+      return;
+    }
+    contactSubmit.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${contactSettings.sendingLabel || 'Sending...'}`;
+    contactSubmit.disabled = true;
+    try {
+      const response = await fetch(contactSettings.endpoint, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
+      if (!response.ok) throw new Error(`Form submission failed (${response.status})`);
+      contactSubmit.innerHTML = `<i class="fas fa-check"></i> ${contactSettings.sentLabel || 'Sent!'}`;
+      contactSuccess.querySelector('#contact-success-message').textContent = contactSettings.successMessage || ui.contactSuccessMessage || 'Message sent!';
+      contactSuccess.classList.remove('hidden');
+      contactForm.reset();
+    } catch (error) {
+      console.error('Contact form submission failed:', error);
+      contactError.textContent = contactSettings.errorMessage || 'Something went wrong. Please try again.';
+      contactError.classList.remove('hidden');
+    } finally {
+      contactSubmit.disabled = false;
+      setTimeout(() => { contactSubmit.innerHTML = `<i class="fas fa-paper-plane"></i> <span id="contact-submit-label">${contactSubmitLabel}</span>`; }, 4000);
+    }
   });
 
   // =====================================================================

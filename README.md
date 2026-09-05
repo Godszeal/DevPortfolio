@@ -108,6 +108,7 @@ The deployment workflow runs automatically after the push. The CDN runtime and C
 | `contact` | object | Contact section subtitle and contact methods. |
 | `nav` | object | Navbar links and their order. |
 | `ui` | object | All remaining labels, headings, form copy, placeholders, and splash messages. |
+| `contact.form` | object | Formspree endpoint and submission messages. |
 
 ### SEO and branding
 
@@ -247,6 +248,42 @@ The `ui` object contains text that is not tied to a portfolio record: section he
 5. Validate the file with a JSON validator before committing.
 6. After pushing, check the **Actions** tab and wait for the Pages deployment to finish.
 7. If the old content remains visible, hard-refresh the browser; the HTML/runtime are cached by the CDN, while the site content comes from the latest Pages `data.json`.
+
+### Contact form with Formspree
+
+The form is already wired for [Formspree](https://formspree.io/). Create a Formspree form, copy its endpoint, and set `contact.form.endpoint` in `data.json`:
+
+```json
+"contact": {
+  "subtitle": "Have a project in mind? Let's discuss it.",
+  "contactInfo": [],
+  "form": {
+    "provider": "formspree",
+    "endpoint": "https://formspree.io/f/your-form-id",
+    "successMessage": "Thanks! Your message has been sent.",
+    "errorMessage": "Something went wrong. Please try again or email me directly.",
+    "unconfiguredMessage": "The contact form is not configured yet. Please email me directly.",
+    "sendingLabel": "Sending...",
+    "sentLabel": "Sent!"
+  }
+}
+```
+
+Formspree receives the fields `name`, `email`, `subject`, and `message`. The browser submits using `fetch` with an `Accept: application/json` header, so the visitor stays on the portfolio page. Do not put a private API key in `data.json`; the public Formspree endpoint is the only value needed for this static form.
+
+For local testing, leave `endpoint` empty. Submitting then shows the configured `unconfiguredMessage` and does not send anything. To test a real delivery, use a test Formspree form and submit a message only after verifying the endpoint.
+
+### Local validation and preview
+
+Before pushing an edit, run:
+
+```bash
+python3 scripts/validate-data.py data.json
+python3 -m json.tool data.json >/dev/null
+python3 -m http.server 8000
+```
+
+Then open <http://127.0.0.1:8000/>. The local page loads the local `data.json`, while its runtime and CSS still come from the pinned CDN release. The browser console should contain no configuration-loading error.
 
 ## Project files
 
