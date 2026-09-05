@@ -561,7 +561,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 reveal" id="hero-stats"></div>
     </div>
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
-      <span class="font-mono text-xs" style="color:var(--neu-sub);">scroll</span>
+      <span class="font-mono text-xs" style="color:var(--neu-sub);" id="scroll-label">scroll</span>
       <i class="fas fa-chevron-down text-xs" style="color:var(--accent);"></i>
     </div>
   </section>
@@ -569,7 +569,7 @@
   <!-- =============================== ABOUT =============================== -->
   <section id="about" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>About Me</span></div>
+      <div class="section-label mb-4 reveal"><span id="about-label">About Me</span></div>
       <h2 class="text-3xl sm:text-4xl font-black mb-16 text-center reveal" id="about-title"></h2>
       <div class="grid lg:grid-cols-2 gap-12 items-start">
         <div class="reveal-left">
@@ -588,7 +588,7 @@
             <div class="mt-8 grid grid-cols-2 gap-4" id="about-details"></div>
             <div class="mt-8">
               <a id="about-cv-btn" href="#" class="neu-btn-accent inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm">
-                <i class="fas fa-download"></i> Download CV
+                <i class="fas fa-download"></i> <span id="cv-label">Download CV</span>
               </a>
             </div>
           </div>
@@ -603,13 +603,13 @@
   <!-- =============================== SKILLS =============================== -->
   <section id="skills" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Tech Stack</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Skills &amp; Technologies</h2>
+      <div class="section-label mb-4 reveal"><span id="skills-label">Tech Stack</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="skills-title">Skills &amp; Technologies</h2>
       <p class="text-center mb-16 reveal" style="color:var(--neu-sub);" id="skills-subtitle"></p>
       <div class="flex flex-wrap justify-center gap-3 mb-12 reveal" id="skill-tabs"></div>
       <div id="skills-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       <div class="mt-16 reveal">
-        <p class="text-center text-sm mb-6 font-mono" style="color:var(--neu-sub);">// Also familiar with</p>
+        <p class="text-center text-sm mb-6 font-mono" style="color:var(--neu-sub);" id="other-tech-label">// Also familiar with</p>
         <div class="flex flex-wrap justify-center gap-3" id="other-tech"></div>
       </div>
     </div>
@@ -618,8 +618,8 @@
   <!-- =============================== PROJECTS =============================== -->
   <section id="projects" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Portfolio</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Featured Projects</h2>
+      <div class="section-label mb-4 reveal"><span id="projects-label">Portfolio</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="projects-title">Featured Projects</h2>
       <p class="text-center mb-16 reveal" style="color:var(--neu-sub);" id="projects-subtitle"></p>
       <div class="flex flex-wrap justify-center gap-3 mb-12 reveal" id="project-filters"></div>
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8" id="projects-grid"></div>
@@ -629,9 +629,9 @@
   <!-- =============================== EXPERIENCE =============================== -->
   <section id="experience" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Career</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Work Experience</h2>
-      <p class="text-center mb-10 text-sm font-mono reveal" style="color:var(--neu-sub);">← drag to scroll →</p>
+      <div class="section-label mb-4 reveal"><span id="experience-label">Career</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="experience-title">Work Experience</h2>
+      <p class="text-center mb-10 text-sm font-mono reveal" style="color:var(--neu-sub);" id="experience-scroll-label">← drag to scroll →</p>
 
       <!-- DESKTOP: Horizontal scrollable timeline -->
       <div class="hidden md:block reveal" id="timeline-desktop">
@@ -662,8 +662,8 @@
   <!-- =============================== EDUCATION =============================== -->
   <section id="education" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Academic</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-16 text-center reveal">Education</h2>
+      <div class="section-label mb-4 reveal"><span id="education-label">Academic</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-16 text-center reveal" id="education-title">Education</h2>
       <div class="grid md:grid-cols-2 gap-8" id="education-grid"></div>
     </div>
   </section>
@@ -671,8 +671,8 @@
   <!-- =============================== CERTIFICATIONS =============================== -->
   <section id="certifications" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Credentials</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Certifications &amp; Awards</h2>
+      <div class="section-label mb-4 reveal"><span id="certifications-label">Credentials</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="certifications-title">Certifications &amp; Awards</h2>
       <p class="text-center mb-16 reveal" style="color:var(--neu-sub);" id="certs-subtitle"></p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" id="certs-grid"></div>
     </div>
@@ -681,15 +681,15 @@
   <!-- =============================== OPEN SOURCE =============================== -->
   <section id="opensource" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Open Source</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Open-Source Contributions</h2>
+      <div class="section-label mb-4 reveal"><span id="opensource-label">Open Source</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="opensource-title">Open-Source Contributions</h2>
       <p class="text-center mb-12 reveal" style="color:var(--neu-sub);" id="oss-subtitle"></p>
 
       <!-- Total contributions counter -->
       <div class="flex justify-center mb-16 reveal">
         <div class="neu px-10 py-6 text-center">
           <div class="text-5xl font-black accent-text oss-counter-num" id="oss-counter">0</div>
-          <div class="text-sm mt-2 font-mono" style="color:var(--neu-sub);">Total GitHub Contributions</div>
+          <div class="text-sm mt-2 font-mono" style="color:var(--neu-sub);" id="oss-counter-label">Total GitHub Contributions</div>
         </div>
       </div>
 
@@ -697,7 +697,7 @@
 
       <div class="mt-10 text-center reveal">
         <a id="oss-profile-btn" href="#" target="_blank" rel="noopener" class="neu-btn-accent inline-flex items-center gap-2 px-8 py-4 font-bold text-base">
-          <i class="fab fa-github"></i> View GitHub Profile
+          <i class="fab fa-github"></i> <span id="oss-profile-label">View GitHub Profile</span>
         </a>
       </div>
     </div>
@@ -706,13 +706,13 @@
   <!-- =============================== BLOG =============================== -->
   <section id="blog" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Writing</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Articles &amp; Blog</h2>
+      <div class="section-label mb-4 reveal"><span id="blog-label">Writing</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="blog-title">Articles &amp; Blog</h2>
       <p class="text-center mb-16 reveal" style="color:var(--neu-sub);" id="blog-subtitle"></p>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid"></div>
       <div class="mt-12 text-center reveal">
         <a id="blog-all-btn" href="#" target="_blank" rel="noopener" class="neu-btn inline-flex items-center gap-2 px-8 py-4 font-bold text-base" style="color:var(--accent);">
-          <i class="fas fa-pen-nib"></i> Read All Articles
+          <i class="fas fa-pen-nib"></i> <span id="blog-all-label">Read All Articles</span>
         </a>
       </div>
     </div>
@@ -721,8 +721,8 @@
   <!-- =============================== TESTIMONIALS =============================== -->
   <section id="testimonials" class="py-24 px-6">
     <div class="max-w-6xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Social Proof</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-16 text-center reveal">What People Say</h2>
+      <div class="section-label mb-4 reveal"><span id="testimonials-label">Social Proof</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-16 text-center reveal" id="testimonials-title">What People Say</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="testimonials-grid"></div>
     </div>
   </section>
@@ -730,16 +730,16 @@
   <!-- =============================== CONTACT =============================== -->
   <section id="contact" class="py-24 px-6">
     <div class="max-w-5xl mx-auto">
-      <div class="section-label mb-4 reveal"><span>Get In Touch</span></div>
-      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal">Let&#39;s Work Together</h2>
+      <div class="section-label mb-4 reveal"><span id="contact-label">Get In Touch</span></div>
+      <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center reveal" id="contact-title">Let&#39;s Work Together</h2>
       <p class="text-center mb-16 reveal" style="color:var(--neu-sub);" id="contact-subtitle"></p>
       <div class="grid lg:grid-cols-2 gap-12">
         <div class="reveal-left">
           <div class="neu p-8 h-full">
-            <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+            <h3 class="text-xl font-bold mb-6" id="contact-info-title">Contact Information</h3>
             <div class="flex flex-col gap-6" id="contact-info"></div>
             <div class="mt-10">
-              <h4 class="text-sm font-semibold mb-4" style="color:var(--neu-sub);">FOLLOW ME</h4>
+              <h4 class="text-sm font-semibold mb-4" style="color:var(--neu-sub);" id="contact-follow-label">FOLLOW ME</h4>
               <div class="flex gap-3" id="contact-socials"></div>
             </div>
           </div>
@@ -748,26 +748,26 @@
           <div class="neu p-8">
             <form id="contact-form" class="flex flex-col gap-5">
               <div>
-                <label class="block text-sm font-semibold mb-2" for="cf-name">Your Name</label>
+                <label class="block text-sm font-semibold mb-2" for="cf-name" id="cf-name-label">Your Name</label>
                 <input class="contact-input" type="text" id="cf-name" placeholder="John Doe" required=""/>
               </div>
               <div>
-                <label class="block text-sm font-semibold mb-2" for="cf-email">Email Address</label>
+                <label class="block text-sm font-semibold mb-2" for="cf-email" id="cf-email-label">Email Address</label>
                 <input class="contact-input" type="email" id="cf-email" placeholder="john@example.com" required=""/>
               </div>
               <div>
-                <label class="block text-sm font-semibold mb-2" for="cf-subject">Subject</label>
+                <label class="block text-sm font-semibold mb-2" for="cf-subject" id="cf-subject-label">Subject</label>
                 <input class="contact-input" type="text" id="cf-subject" placeholder="Project Collaboration"/>
               </div>
               <div>
-                <label class="block text-sm font-semibold mb-2" for="cf-message">Message</label>
+                <label class="block text-sm font-semibold mb-2" for="cf-message" id="cf-message-label">Message</label>
                 <textarea class="contact-input" id="cf-message" rows="5" placeholder="Tell me about your project..." required=""></textarea>
               </div>
               <button type="submit" class="neu-btn-accent px-8 py-4 font-bold text-base flex items-center justify-center gap-2" id="cf-submit">
-                <i class="fas fa-paper-plane"></i> Send Message
+                <i class="fas fa-paper-plane"></i> <span id="contact-submit-label">Send Message</span>
               </button>
               <div id="cf-success" class="hidden text-center py-3 rounded-xl text-sm font-semibold" style="background:rgba(99,102,241,0.1);color:var(--accent);">
-                ✅ Message sent! I&#39;ll get back to you soon.
+                <span id="contact-success-message">Message sent! I'll get back to you soon.</span>
               </div>
             </form>
           </div>
@@ -791,1374 +791,14 @@
       </div>
       <div class="mt-8 pt-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-sm" style="border-color:var(--neu-dark);color:var(--neu-sub);">
         <p id="footer-copy"></p>
-        <p class="font-mono text-xs">Built with <span style="color:var(--accent);">❤</span> &amp; vanilla JS</p>
+        <p class="font-mono text-xs" id="footer-built-with">Built with <span style="color:var(--accent);">❤</span> &amp; vanilla JS</p>
       </div>
     </div>
   </div>
 </footer>
 
 <!-- =============================== SCRIPTS =============================== -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-
-  // ███████╗ ██████╗ ██████╗  ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗
-  // ██╔════╝██╔═══██╗██╔══██╗ ╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
-  // ███████╗██║   ██║██████╔╝    ██║   █████╗  ██║   ██║██║     ██║██║   ██║
-  // ╚════██║██║   ██║██╔═══╝     ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
-  // ███████║╚██████╔╝██║         ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
-  // ╚══════╝ ╚═════╝ ╚═╝         ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝
-  //
-  //  ✏️  EDIT THIS OBJECT TO CUSTOMISE EVERY PART OF YOUR PORTFOLIO
-  // ====================================================================
-
-  const portfolio = {
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🔍 SEO & SITE METADATA  (controls <title>, meta tags, favicon, OG)
-    // ──────────────────────────────────────────────────────────────────────
-    seo: {
-      siteTitle:       "Alex Johnson — Full-Stack Developer",
-      siteDescription: "Full-stack developer crafting beautiful, performant web apps with React, Node.js, and modern cloud infrastructure.",
-      keywords:        "full-stack developer, react, node.js, typescript, portfolio, web developer, frontend, backend",
-      author:          "Alex Johnson",
-      canonicalUrl:    "https://alexjohnson.dev",
-      ogImage:         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop",
-      twitterHandle:   "@alexjohnsondev",
-      themeColor:      "#6366f1",
-      // Favicon — paste a URL to a .ico/.png, or use a base64 data URI
-      favicon:         "https://fav.farm/💻",
-      // Structured data (JSON-LD) — optional, leave blank to skip
-      jsonLd: {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Alex Johnson",
-        "url": "https://alexjohnson.dev",
-        "sameAs": ["https://github.com","https://linkedin.com"]
-      }
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🖼️  LOGO / BRAND  (shown in navbar)
-    // ──────────────────────────────────────────────────────────────────────
-    logo: {
-      text:  "&lt;/Dev&gt;",   // HTML text logo (supports HTML entities)
-      image: "",                 // Optional: URL to an image logo — leave "" for text only
-      alt:   "Logo",
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 👤 PERSONAL INFORMATION
-    // ──────────────────────────────────────────────────────────────────────
-    personal: {
-      name:         "Alex Johnson",
-      initials:     "AJ",
-      role:         "Full-Stack Developer",
-      tagline:      "Building elegant solutions to complex problems",
-      email:        "alex@example.com",
-      phone:        "+1 (555) 123-4567",
-      location:     "San Francisco, CA",
-      availability: "Available for work",
-      cvUrl:        "#",
-      avatar:       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🦸 HERO SECTION
-    // ──────────────────────────────────────────────────────────────────────
-    hero: {
-      greeting: "Hi, I'm",
-      typingRoles: [
-        "Full-Stack Developer",
-        "UI/UX Enthusiast",
-        "Open Source Contributor",
-        "Problem Solver",
-        "Coffee Addict ☕",
-      ],
-      bio: "I craft beautiful, performant web applications with modern technologies. Passionate about clean code, great UX, and building products that make a difference.",
-      primaryCTA:   { label: "View My Work", href: "#projects" },
-      secondaryCTA: { label: "Contact Me",   href: "#contact" },
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 📊 HERO STATS
-    // ──────────────────────────────────────────────────────────────────────
-    stats: [
-      { value: "5+",  label: "Years Experience", icon: "fa-briefcase" },
-      { value: "40+", label: "Projects Built",   icon: "fa-code" },
-      { value: "20+", label: "Happy Clients",    icon: "fa-smile" },
-      { value: "10+", label: "Open Source",      icon: "fa-github" },
-    ],
-
-    // Floating badges on avatar
-    badges: {
-      experience: "5+ Yrs",
-      projects:   "40+ Projects",
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🔗 SOCIAL LINKS  (used in hero, contact, footer)
-    // ──────────────────────────────────────────────────────────────────────
-    socials: [
-      { icon: "fa-brands fa-github",   url: "https://github.com",   label: "GitHub" },
-      { icon: "fa-brands fa-linkedin", url: "https://linkedin.com", label: "LinkedIn" },
-      { icon: "fa-brands fa-twitter",  url: "https://twitter.com",  label: "Twitter" },
-      { icon: "fa-brands fa-dribbble", url: "https://dribbble.com", label: "Dribbble" },
-      { icon: "fa-solid fa-globe",     url: "https://example.com",  label: "Website" },
-    ],
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🙋 ABOUT SECTION
-    // ──────────────────────────────────────────────────────────────────────
-    about: {
-      title: "Who I Am",
-      bio1:  "I'm a passionate full-stack developer with over 5 years of experience building web applications that are both functional and beautiful. I believe in writing clean, maintainable code and creating user experiences that delight.",
-      bio2:  "When I'm not coding, you can find me hiking in the mountains, experimenting with new recipes in the kitchen, or contributing to open-source projects I care about.",
-      details: [
-        { label: "Name",     value: "Alex Johnson",          icon: "fa-user" },
-        { label: "Location", value: "San Francisco, CA",     icon: "fa-map-marker-alt" },
-        { label: "Email",    value: "alex@example.com",      icon: "fa-envelope" },
-        { label: "Status",   value: "Open to opportunities", icon: "fa-circle-check" },
-      ],
-      highlights: [
-        { icon:"fa-lightbulb", color:"#6366f1", title:"Problem Solver",    desc:"Love tackling complex challenges with elegant, scalable solutions." },
-        { icon:"fa-palette",   color:"#8b5cf6", title:"Design Focused",    desc:"Strong eye for detail and passion for beautiful user interfaces." },
-        { icon:"fa-rocket",    color:"#ec4899", title:"Performance First",  desc:"Obsessed with speed, optimisation, and delivering fast experiences." },
-        { icon:"fa-users",     color:"#06b6d4", title:"Team Player",        desc:"Thrive in collaborative environments and love mentoring others." },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🛠️ SKILLS & TECH STACK
-    // ──────────────────────────────────────────────────────────────────────
-    skills: {
-      subtitle: "My technical toolkit — constantly evolving",
-      categories: [
-        {
-          name: "Frontend", icon: "fa-layer-group",
-          items: [
-            { name: "React / Next.js",  level: 95 },
-            { name: "TypeScript",       level: 90 },
-            { name: "Vue.js",           level: 80 },
-            { name: "Tailwind CSS",     level: 92 },
-            { name: "Framer Motion",    level: 75 },
-          ],
-        },
-        {
-          name: "Backend", icon: "fa-server",
-          items: [
-            { name: "Node.js / Express", level: 90 },
-            { name: "Python / FastAPI",  level: 82 },
-            { name: "PostgreSQL",        level: 85 },
-            { name: "MongoDB",           level: 80 },
-            { name: "GraphQL",           level: 75 },
-          ],
-        },
-        {
-          name: "DevOps", icon: "fa-cloud",
-          items: [
-            { name: "Docker",          level: 85 },
-            { name: "AWS / GCP",       level: 78 },
-            { name: "CI/CD Pipelines", level: 80 },
-            { name: "Kubernetes",      level: 65 },
-            { name: "Terraform",       level: 60 },
-          ],
-        },
-      ],
-      otherTech: [
-        "Git","Redis","WebSockets","REST APIs","JWT","Stripe",
-        "Firebase","Supabase","Prisma","Jest","Cypress","Figma",
-        "Linux","Nginx","Webpack","Vite",
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 💼 PROJECTS  (click a card to open lightbox)
-    // ──────────────────────────────────────────────────────────────────────
-    projects: {
-      subtitle: "A selection of my best work across different domains",
-      items: [
-        {
-          title:       "NovaMart E-Commerce",
-          category:    "Full-Stack",
-          description: "A high-performance e-commerce platform with real-time inventory, Stripe payments, and an AI recommendation engine serving 50k+ users.",
-          image:       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "NovaMart is a full-featured e-commerce solution built from the ground up with scalability in mind. It integrates Stripe for seamless payments, uses Redis for cart caching, and features a custom AI recommendation engine powered by collaborative filtering.",
-          challenges: [
-            "Optimising real-time inventory sync across multiple warehouses",
-            "Implementing fraud detection without adding checkout friction",
-            "Achieving sub-200ms page loads at 50k concurrent users",
-          ],
-          outcomes: [
-            "Increased average order value by 32% via AI recommendations",
-            "Reduced cart abandonment rate from 70% to 48%",
-            "Achieved 99.97% uptime over 12 months",
-          ],
-          tech:     ["Next.js","TypeScript","PostgreSQL","Stripe","Redis"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: true,
-        },
-        {
-          title:       "Taskly — Project Manager",
-          category:    "SaaS",
-          description: "A Notion-inspired project management tool with drag-and-drop boards, real-time collaboration, and smart task automation.",
-          image:       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "Taskly brings the best of Notion, Jira, and Linear into a single, fast, intuitive workspace. Real-time collaboration is powered by CRDTs over WebSockets, and task automation uses a custom rule engine.",
-          challenges: [
-            "Building conflict-free real-time collaborative editing (CRDT)",
-            "Designing an intuitive drag-and-drop UX for nested task trees",
-            "Keeping WebSocket connections stable across unreliable networks",
-          ],
-          outcomes: [
-            "Reached 5,000 MAUs within 3 months of launch",
-            "Teams reported 40% reduction in status-update meetings",
-            "Featured in Product Hunt's top 5 launches of the week",
-          ],
-          tech:     ["React","Node.js","MongoDB","WebSockets","Docker"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: true,
-        },
-        {
-          title:       "CodeLens — AI Code Review",
-          category:    "AI / ML",
-          description: "An AI-powered code review tool that integrates with GitHub PRs to provide instant, context-aware feedback and security analysis.",
-          image:       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "CodeLens hooks into the GitHub API to review every pull request automatically. It uses a fine-tuned LLM to detect security vulnerabilities, style violations, and performance anti-patterns, providing inline comments directly on the diff.",
-          challenges: [
-            "Fine-tuning an LLM on proprietary code review datasets",
-            "Keeping review latency under 30 seconds for large diffs",
-            "Reducing false-positive rate from 25% to under 5%",
-          ],
-          outcomes: [
-            "Adopted by 200+ engineering teams within 6 months",
-            "Reduced PR review cycle time by an average of 3 hours",
-            "Caught 1,200+ security issues before they reached production",
-          ],
-          tech:     ["Python","FastAPI","OpenAI","React","PostgreSQL"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: true,
-        },
-        {
-          title:       "WeatherFlow Dashboard",
-          category:    "Frontend",
-          description: "A beautiful weather dashboard with interactive maps, 10-day forecasts, and air quality data.",
-          image:       "https://images.unsplash.com/photo-1504608524841-42584120d693?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&h=500&fit=crop",
-            "https://images.unsplash.com/photo-1561484930-974554019ade?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "WeatherFlow visualises real-time and forecast weather data using interactive D3 charts, Mapbox maps, and smooth animations. Supports dark mode and offline caching via Service Workers.",
-          challenges: [
-            "Rendering smooth animated SVG wind direction vectors",
-            "Handling inconsistent data from multiple weather APIs",
-          ],
-          outcomes: [
-            "10k monthly active users within 2 months",
-            "Featured on CSS Design Awards",
-          ],
-          tech:     ["Vue.js","D3.js","OpenWeather API","Tailwind"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: false,
-        },
-        {
-          title:       "DevBlog CMS",
-          category:    "Full-Stack",
-          description: "A headless CMS for developers with MDX support, syntax highlighting, SEO automation, and a sleek admin dashboard.",
-          image:       "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "DevBlog is a developer-first headless CMS with a rich MDX editor, auto-generated OG images, and built-in analytics. The admin dashboard provides real-time traffic stats and SEO scoring.",
-          challenges: [
-            "Building a performant MDX editor with live preview",
-            "Automating OG image generation without a headless browser",
-          ],
-          outcomes: [
-            "Reduced time-to-publish by 60% vs WordPress",
-            "Achieved 100/100 Lighthouse score on all posts",
-          ],
-          tech:     ["Next.js","MDX","Prisma","PostgreSQL","Vercel"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: false,
-        },
-        {
-          title:       "CryptoTrack Portfolio",
-          category:    "Finance",
-          description: "A real-time crypto portfolio tracker with historical charts, price alerts, and tax reporting.",
-          image:       "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=500&fit=crop",
-          screenshots: [
-            "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=900&h=500&fit=crop",
-          ],
-          fullDescription: "CryptoTrack connects to major exchanges via API to aggregate your holdings in real time. It generates tax reports in multiple jurisdictions and supports 500+ coins.",
-          challenges: [
-            "Real-time WebSocket price feeds from 8 exchanges simultaneously",
-            "Handling complex tax calculation rules across 30+ jurisdictions",
-          ],
-          outcomes: [
-            "$2M+ in portfolio value tracked",
-            "Saved users an average of 4 hours on tax reporting",
-          ],
-          tech:     ["React","Chart.js","CoinGecko API","Firebase"],
-          liveUrl:  "#",
-          repoUrl:  "#",
-          featured: false,
-        },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🏢 WORK EXPERIENCE
-    // ──────────────────────────────────────────────────────────────────────
-    experience: [
-      {
-        company:     "TechVision Inc.",
-        role:        "Senior Full-Stack Developer",
-        period:      "2022 – Present",
-        location:    "San Francisco, CA",
-        type:        "Full-time",
-        icon:        "fa-building",
-        logo:        "https://ui-avatars.com/api/?name=TV&background=6366f1&color=fff&bold=true",
-        description: "Lead development of core platform features, mentor junior developers, and drive performance improvements.",
-        achievements: [
-          "Architected microservices migration cutting deploy time by 60%",
-          "Shipped 3 major features used by 100k+ users",
-          "Established code-review standards & testing guidelines",
-        ],
-        tech: ["React","Node.js","AWS","PostgreSQL","Docker"],
-      },
-      {
-        company:     "Startup Lab",
-        role:        "Full-Stack Developer",
-        period:      "2020 – 2022",
-        location:    "Remote",
-        type:        "Full-time",
-        icon:        "fa-rocket",
-        logo:        "https://ui-avatars.com/api/?name=SL&background=8b5cf6&color=fff&bold=true",
-        description: "Built MVPs for 5 startup clients from scratch, owning everything from DB design to CI/CD.",
-        achievements: [
-          "Delivered 5 production apps on tight deadlines",
-          "Increased client conversion rate by 28% via UX improvements",
-          "Integrated payment gateways processing $2M+ in transactions",
-        ],
-        tech: ["Vue.js","Python","Firebase","GCP","Stripe"],
-      },
-      {
-        company:     "FreelanceDev",
-        role:        "Freelance Developer",
-        period:      "2019 – 2020",
-        location:    "Remote",
-        type:        "Freelance",
-        icon:        "fa-laptop-code",
-        logo:        "https://ui-avatars.com/api/?name=FD&background=ec4899&color=fff&bold=true",
-        description: "Worked with international clients across web apps, WordPress themes, and browser extensions.",
-        achievements: [
-          "Completed 25+ projects with a 5-star average rating",
-          "Built a browser extension with 5k+ active users",
-          "Developed custom WordPress plugins for e-commerce clients",
-        ],
-        tech: ["React","WordPress","JavaScript","PHP","MySQL"],
-      },
-      {
-        company:     "InternTech",
-        role:        "Software Engineering Intern",
-        period:      "2018 – 2019",
-        location:    "Palo Alto, CA",
-        type:        "Internship",
-        icon:        "fa-graduation-cap",
-        logo:        "https://ui-avatars.com/api/?name=IT&background=06b6d4&color=fff&bold=true",
-        description: "Worked on consumer-facing features for a fintech SaaS product used by 200k users.",
-        achievements: [
-          "Shipped 2 features that improved user engagement by 15%",
-          "Won internal hackathon with an AI budget-tracking feature",
-        ],
-        tech: ["Angular","Java","Spring Boot","MySQL"],
-      },
-    ],
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🎓 EDUCATION
-    // ──────────────────────────────────────────────────────────────────────
-    education: [
-      {
-        institution: "University of California, Berkeley",
-        degree:      "B.Sc. Computer Science",
-        period:      "2015 – 2019",
-        gpa:         "3.8 / 4.0",
-        description: "Focused on algorithms, distributed systems, and human-computer interaction. Graduated with Honors.",
-        logo:        "https://ui-avatars.com/api/?name=UCB&background=003262&color=FDB515&bold=true",
-        achievements: ["Dean's List (3 years)","ACM Chapter President","Hackathon winner × 2"],
-      },
-      {
-        institution: "Meta Front-End Developer",
-        degree:      "Professional Certificate",
-        period:      "2021",
-        gpa:         "",
-        description: "Comprehensive front-end development program covering React, UX design principles, and modern web standards.",
-        logo:        "https://ui-avatars.com/api/?name=Meta&background=0a66c2&color=fff&bold=true",
-        achievements: ["Capstone project: 98/100","Top 5% graduate"],
-      },
-    ],
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🏆 CERTIFICATIONS & AWARDS
-    // ──────────────────────────────────────────────────────────────────────
-    certifications: {
-      subtitle: "Verified credentials and recognitions from leading organisations",
-      items: [
-        {
-          name:         "AWS Certified Solutions Architect",
-          issuer:       "Amazon Web Services",
-          issuerLogo:   "https://ui-avatars.com/api/?name=AWS&background=FF9900&color=fff&bold=true",
-          date:         "March 2023",
-          credentialId: "AWS-SAA-C03-XXXXXX",
-          verifyUrl:    "#",
-          badgeColor:   "#FF9900",
-        },
-        {
-          name:         "Google Cloud Professional Developer",
-          issuer:       "Google Cloud",
-          issuerLogo:   "https://ui-avatars.com/api/?name=GCP&background=4285F4&color=fff&bold=true",
-          date:         "November 2022",
-          credentialId: "GCP-PD-XXXXXX",
-          verifyUrl:    "#",
-          badgeColor:   "#4285F4",
-        },
-        {
-          name:         "Certified Kubernetes Administrator",
-          issuer:       "Cloud Native Computing Foundation",
-          issuerLogo:   "https://ui-avatars.com/api/?name=CKA&background=326CE5&color=fff&bold=true",
-          date:         "July 2022",
-          credentialId: "CKA-XXXXXX",
-          verifyUrl:    "#",
-          badgeColor:   "#326CE5",
-        },
-        {
-          name:         "Meta Front-End Developer Certificate",
-          issuer:       "Meta (Coursera)",
-          issuerLogo:   "https://ui-avatars.com/api/?name=Meta&background=0a66c2&color=fff&bold=true",
-          date:         "April 2021",
-          credentialId: "META-FE-XXXXXX",
-          verifyUrl:    "#",
-          badgeColor:   "#0a66c2",
-        },
-        {
-          name:         "Best Developer Award — HackSF 2022",
-          issuer:       "HackSF Hackathon",
-          issuerLogo:   "https://ui-avatars.com/api/?name=HSF&background=ec4899&color=fff&bold=true",
-          date:         "October 2022",
-          credentialId: "",
-          verifyUrl:    "#",
-          badgeColor:   "#ec4899",
-        },
-        {
-          name:         "GitHub Campus Expert",
-          issuer:       "GitHub",
-          issuerLogo:   "https://ui-avatars.com/api/?name=GH&background=171515&color=fff&bold=true",
-          date:         "September 2019",
-          credentialId: "GCE-XXXXXX",
-          verifyUrl:    "#",
-          badgeColor:   "#6366f1",
-        },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🐙 OPEN-SOURCE CONTRIBUTIONS
-    // ──────────────────────────────────────────────────────────────────────
-    openSource: {
-      subtitle:             "I love giving back to the developer community",
-      githubProfileUrl:     "https://github.com",
-      totalContributions:   1247,
-      repos: [
-        {
-          name:        "react-neu",
-          description: "A neumorphism UI component library for React with full TypeScript support and 50+ components.",
-          language:    "TypeScript",
-          stars:       1820,
-          forks:       214,
-          url:         "https://github.com",
-        },
-        {
-          name:        "fastapi-boilerplate",
-          description: "Production-ready FastAPI boilerplate with JWT auth, PostgreSQL, Docker, and CI/CD pre-configured.",
-          language:    "Python",
-          stars:       943,
-          forks:       158,
-          url:         "https://github.com",
-        },
-        {
-          name:        "tailwind-neumorphism",
-          description: "Tailwind CSS plugin that adds neumorphism utility classes for light and dark themes.",
-          language:    "JavaScript",
-          stars:       672,
-          forks:       89,
-          url:         "https://github.com",
-        },
-        {
-          name:        "node-rate-limiter-pro",
-          description: "Flexible rate limiter for Express/Fastify supporting Redis, in-memory, and sliding windows.",
-          language:    "TypeScript",
-          stars:       415,
-          forks:       52,
-          url:         "https://github.com",
-        },
-        {
-          name:        "pg-query-builder",
-          description: "Type-safe PostgreSQL query builder for Node.js with zero external dependencies.",
-          language:    "TypeScript",
-          stars:       290,
-          forks:       34,
-          url:         "https://github.com",
-        },
-        {
-          name:        "devops-toolkit",
-          description: "A collection of battle-tested shell scripts and Terraform modules for rapid infra provisioning.",
-          language:    "Go",
-          stars:       178,
-          forks:       41,
-          url:         "https://github.com",
-        },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // ✍️ BLOG / ARTICLES
-    // ──────────────────────────────────────────────────────────────────────
-    blog: {
-      subtitle:    "Thoughts on code, design, and the developer life",
-      allPostsUrl: "https://dev.to",
-      posts: [
-        {
-          title:       "Building Neumorphic UIs with Tailwind CSS",
-          date:        "May 12, 2026",
-          tag:         "CSS / Design",
-          tagColor:    "#8b5cf6",
-          excerpt:     "A deep dive into recreating the soft-UI neumorphism trend using only Tailwind utility classes, with light/dark mode support baked in.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1558655146-d09347e92766?w=700&h=400&fit=crop",
-          readTime:    "8 min read",
-        },
-        {
-          title:       "Why I Chose Bun Over Node.js in 2026",
-          date:        "April 3, 2026",
-          tag:         "Backend",
-          tagColor:    "#06b6d4",
-          excerpt:     "After 6 months of running Bun in production, here's an honest performance comparison, gotchas, and migration tips for Node.js developers.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?w=700&h=400&fit=crop",
-          readTime:    "12 min read",
-        },
-        {
-          title:       "Mastering TypeScript Generics Once and for All",
-          date:        "March 15, 2026",
-          tag:         "TypeScript",
-          tagColor:    "#3178c6",
-          excerpt:     "Generics are the most powerful and most misunderstood feature in TypeScript. This guide demystifies them with practical, real-world examples.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=700&h=400&fit=crop",
-          readTime:    "10 min read",
-        },
-        {
-          title:       "The Complete Guide to React Server Components",
-          date:        "February 20, 2026",
-          tag:         "React",
-          tagColor:    "#61dafb",
-          excerpt:     "Server Components are now stable, but many developers are still confused about what they are, when to use them, and how they differ from SSR.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&h=400&fit=crop",
-          readTime:    "15 min read",
-        },
-        {
-          title:       "PostgreSQL vs MongoDB in 2026: A Real-World Comparison",
-          date:        "January 8, 2026",
-          tag:         "Databases",
-          tagColor:    "#f59e0b",
-          excerpt:     "I've built the same app with both databases. Here's an honest look at query performance, schema flexibility, and developer experience.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=700&h=400&fit=crop",
-          readTime:    "11 min read",
-        },
-        {
-          title:       "From Monolith to Microservices: Lessons Learned",
-          date:        "December 5, 2025",
-          tag:         "Architecture",
-          tagColor:    "#ec4899",
-          excerpt:     "We migrated a 5-year-old Rails monolith to microservices. Here are the 7 mistakes we made and what we'd do differently.",
-          readMoreUrl: "#",
-          image:       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&h=400&fit=crop",
-          readTime:    "14 min read",
-        },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 💬 TESTIMONIALS
-    // ──────────────────────────────────────────────────────────────────────
-    testimonials: [
-      {
-        name:   "Sarah Chen",
-        role:   "CTO at TechVision",
-        avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face",
-        quote:  "Alex is one of the most talented developers I've worked with. Their ability to balance technical excellence with clear communication makes them invaluable.",
-        rating: 5,
-      },
-      {
-        name:   "Marcus Rodriguez",
-        role:   "Founder at Startup Lab",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-        quote:  "Delivered every project on time and above expectations. Alex turned our vague ideas into polished, production-ready products. Would hire again in a heartbeat.",
-        rating: 5,
-      },
-      {
-        name:   "Emma Wilson",
-        role:   "Product Manager at Taskly",
-        avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-        quote:  "Working with Alex was a pleasure. They proactively identified edge cases and proposed solutions before they became problems. A true professional.",
-        rating: 5,
-      },
-    ],
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 📬 CONTACT SECTION
-    // ──────────────────────────────────────────────────────────────────────
-    contact: {
-      subtitle: "Have a project in mind? Let's discuss it. I'm always open to new opportunities.",
-      contactInfo: [
-        { icon:"fa-envelope",         label:"Email",    value:"alex@example.com",     href:"mailto:alex@example.com" },
-        { icon:"fa-phone",            label:"Phone",    value:"+1 (555) 123-4567",    href:"tel:+15551234567" },
-        { icon:"fa-map-marker-alt",   label:"Location", value:"San Francisco, CA",    href:"#" },
-      ],
-    },
-
-    // ──────────────────────────────────────────────────────────────────────
-    // 🗂️ NAVIGATION LINKS  (order = order in navbar)
-    // ──────────────────────────────────────────────────────────────────────
-    nav: {
-      links: [
-        { label:"About",           href:"#about" },
-        { label:"Skills",          href:"#skills" },
-        { label:"Projects",        href:"#projects" },
-        { label:"Experience",      href:"#experience" },
-        { label:"Certifications",  href:"#certifications" },
-        { label:"Open Source",     href:"#opensource" },
-        { label:"Blog",            href:"#blog" },
-        { label:"Contact",         href:"#contact" },
-      ],
-    },
-
-  }; // ← END OF portfolio JSON
-
-  // =====================================================================
-  //  SEO — inject meta tags dynamically from portfolio.seo
-  // =====================================================================
-  const seo = portfolio.seo;
-  document.getElementById('meta-title').textContent       = seo.siteTitle;
-  document.getElementById('meta-desc').content            = seo.siteDescription;
-  document.getElementById('meta-keywords').content        = seo.keywords;
-  document.getElementById('meta-author').content          = seo.author;
-  document.getElementById('meta-canonical').href          = seo.canonicalUrl;
-  document.getElementById('og-site').content              = seo.siteTitle;
-  document.getElementById('og-title').content             = seo.siteTitle;
-  document.getElementById('og-desc').content              = seo.siteDescription;
-  document.getElementById('og-url').content               = seo.canonicalUrl;
-  document.getElementById('og-img').content               = seo.ogImage;
-  document.getElementById('tw-title').content             = seo.siteTitle;
-  document.getElementById('tw-desc').content              = seo.siteDescription;
-  document.getElementById('tw-img').content               = seo.ogImage;
-  document.getElementById('tw-url').content               = seo.canonicalUrl;
-  document.getElementById('tw-creator').content           = seo.twitterHandle;
-  document.getElementById('favicon').href                 = seo.favicon;
-
-  // Theme color
-  const tcMeta = document.createElement('meta');
-  tcMeta.name = 'theme-color'; tcMeta.content = seo.themeColor;
-  document.head.appendChild(tcMeta);
-
-  // JSON-LD structured data
-  if (seo.jsonLd && Object.keys(seo.jsonLd).length) {
-    const jld = document.createElement('script');
-    jld.type = 'application/ld+json';
-    jld.textContent = JSON.stringify(seo.jsonLd);
-    document.head.appendChild(jld);
-  }
-
-  // =====================================================================
-  //  THEME
-  // =====================================================================
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  let isDark = localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark);
-
-  function applyTheme() {
-    document.documentElement.classList.toggle('dark', isDark);
-    document.getElementById('theme-icon').className = isDark ? 'fas fa-moon' : 'fas fa-sun';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  }
-  applyTheme();
-  document.getElementById('theme-toggle').addEventListener('click', () => { isDark = !isDark; applyTheme(); });
-
-  // =====================================================================
-  //  SPLASH
-  // =====================================================================
-  const splashEl  = document.getElementById('splash');
-  const splashTxts = ['Loading...','Building UI...','Almost there...',`Welcome, ${portfolio.personal.name}!`];
-  let si = 0;
-  const ste = document.getElementById('splash-text');
-  const splashInt = setInterval(() => {
-    si++;
-    if (si < splashTxts.length) {
-      ste.style.opacity = '0';
-      setTimeout(() => { ste.textContent = splashTxts[si]; ste.style.opacity = '1'; ste.style.transition = 'opacity 0.4s'; }, 200);
-    }
-  }, 600);
-  document.body.style.overflow = 'hidden';
-  setTimeout(() => {
-    clearInterval(splashInt);
-    splashEl.classList.add('hidden-splash');
-    document.body.style.overflow = '';
-    initReveal();
-    animateOSSCounter();
-  }, 2800);
-
-  // =====================================================================
-  //  SCROLL PROGRESS
-  // =====================================================================
-  const progBar = document.getElementById('scroll-progress');
-  window.addEventListener('scroll', () => {
-    const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-    progBar.style.width = pct + '%';
-    document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 400);
-    updateActiveNav();
-  });
-
-  // =====================================================================
-  //  NAVBAR
-  // =====================================================================
-  const p = portfolio;
-
-  // Logo
-  const navLogoImg  = document.getElementById('nav-logo-img');
-  const navLogoText = document.getElementById('nav-logo-text');
-  navLogoText.innerHTML = p.logo.text;
-  if (p.logo.image) {
-    navLogoImg.src = p.logo.image;
-    navLogoImg.alt = p.logo.alt;
-    navLogoImg.classList.remove('hidden');
-  }
-
-  const navLinksEl   = document.getElementById('nav-links');
-  const mobLinksEl   = document.getElementById('mobile-nav-links');
-  const indicatorsEl = document.getElementById('section-indicators');
-
-  p.nav.links.forEach(link => {
-    const a = document.createElement('a'); a.href = link.href; a.className = 'nav-link'; a.textContent = link.label;
-    a.addEventListener('click', closeMobileMenu); navLinksEl.appendChild(a);
-
-    const ma = document.createElement('a'); ma.href = link.href; ma.className = 'text-base font-semibold py-2 nav-link'; ma.textContent = link.label; ma.style.color = 'var(--neu-text)';
-    ma.addEventListener('click', closeMobileMenu); mobLinksEl.appendChild(ma);
-
-    const dot = document.createElement('div'); dot.className = 'indicator-dot'; dot.dataset.target = link.href.replace('#',''); dot.title = link.label;
-    dot.addEventListener('click', () => document.querySelector(link.href)?.scrollIntoView({behavior:'smooth'}));
-    indicatorsEl.appendChild(dot);
-  });
-
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
-
-  function updateActiveNav() {
-    const sections = p.nav.links.map(l => l.href.replace('#',''));
-    let current = '';
-    sections.forEach(id => { const el = document.getElementById(id); if (el && window.scrollY >= el.offsetTop - 140) current = id; });
-    document.querySelectorAll('.nav-link').forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-    document.querySelectorAll('.indicator-dot').forEach(d => d.classList.toggle('active', d.dataset.target === current));
-  }
-
-  // Mobile menu
-  const hamburger = document.getElementById('hamburger');
-  const hamburgerIcon = document.getElementById('hamburger-icon');
-  const mobileMenu = document.getElementById('mobile-menu');
-  let menuOpen = false;
-  hamburger.addEventListener('click', () => {
-    menuOpen = !menuOpen;
-    mobileMenu.classList.toggle('open', menuOpen);
-    hamburgerIcon.className = menuOpen ? 'fas fa-times' : 'fas fa-bars';
-  });
-  function closeMobileMenu() { menuOpen = false; mobileMenu.classList.remove('open'); hamburgerIcon.className = 'fas fa-bars'; }
-
-  document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const t = document.querySelector(a.getAttribute('href'));
-      if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
-    });
-  });
-
-  // =====================================================================
-  //  HERO
-  // =====================================================================
-  document.getElementById('hero-label').querySelector('span').textContent = p.personal.availability;
-  document.getElementById('hero-greeting').innerHTML = `${p.hero.greeting} <span class="accent-text">${p.personal.name}</span>`;
-  document.getElementById('hero-bio').textContent = p.hero.bio;
-  document.getElementById('hero-avatar').src = p.personal.avatar;
-  document.getElementById('hero-avatar').alt = `${p.personal.name} — ${p.personal.role}`;
-  document.getElementById('badge-exp').textContent = p.badges.experience;
-  document.getElementById('badge-projects').textContent = p.badges.projects;
-
-  const ctasEl = document.getElementById('hero-ctas');
-  const pa = document.createElement('a'); pa.href = p.hero.primaryCTA.href; pa.className = 'neu-btn-accent px-8 py-4 font-bold text-base'; pa.textContent = p.hero.primaryCTA.label; ctasEl.appendChild(pa);
-  const sa = document.createElement('a'); sa.href = p.hero.secondaryCTA.href; sa.className = 'neu-btn px-8 py-4 font-bold text-base'; sa.style.color = 'var(--neu-text)'; sa.textContent = p.hero.secondaryCTA.label; ctasEl.appendChild(sa);
-
-  function buildSocials(container) {
-    p.socials.forEach(s => {
-      const a = document.createElement('a'); a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.setAttribute('aria-label', s.label);
-      a.className = 'neu-btn w-10 h-10 flex items-center justify-center text-sm'; a.style.color = 'var(--neu-sub)';
-      a.innerHTML = `<i class="${s.icon}"></i>`; container.appendChild(a);
-    });
-  }
-  buildSocials(document.getElementById('hero-socials'));
-
-  const statsEl = document.getElementById('hero-stats');
-  p.stats.forEach(st => {
-    const c = document.createElement('div'); c.className = 'neu p-6 text-center';
-    c.innerHTML = `<div class="w-10 h-10 mx-auto mb-3 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,var(--accent),#8b5cf6);"><i class="fas ${st.icon} text-white text-sm"></i></div><div class="text-2xl font-black accent-text">${st.value}</div><div class="text-xs mt-1 font-medium" style="color:var(--neu-sub);">${st.label}</div>`;
-    statsEl.appendChild(c);
-  });
-
-  // Typing
-  const typingEl = document.getElementById('typing-text');
-  const roles = p.hero.typingRoles;
-  let ri = 0, ci = 0, del = false;
-  function typeWriter() {
-    const cur = roles[ri];
-    if (!del) { typingEl.textContent = cur.substring(0, ci + 1); ci++; if (ci === cur.length) { del = true; setTimeout(typeWriter, 1800); return; } }
-    else { typingEl.textContent = cur.substring(0, ci - 1); ci--; if (ci === 0) { del = false; ri = (ri + 1) % roles.length; } }
-    setTimeout(typeWriter, del ? 60 : 80);
-  }
-  setTimeout(typeWriter, 3000);
-
-  // =====================================================================
-  //  ABOUT
-  // =====================================================================
-  document.getElementById('about-title').textContent = p.about.title;
-  document.getElementById('about-name').textContent  = p.personal.name;
-  document.getElementById('about-role').textContent  = p.personal.role;
-  document.getElementById('about-bio').textContent   = p.about.bio1;
-  document.getElementById('about-bio2').textContent  = p.about.bio2;
-  document.getElementById('about-cv-btn').href       = p.personal.cvUrl;
-
-  const detailsEl = document.getElementById('about-details');
-  p.about.details.forEach(d => {
-    const div = document.createElement('div'); div.className = 'flex items-center gap-3';
-    div.innerHTML = `<div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(99,102,241,0.15);"><i class="fas ${d.icon} text-xs" style="color:var(--accent);"></i></div><div><div class="text-xs" style="color:var(--neu-sub);">${d.label}</div><div class="text-sm font-semibold">${d.value}</div></div>`;
-    detailsEl.appendChild(div);
-  });
-
-  const highlightsEl = document.getElementById('about-highlights');
-  p.about.highlights.forEach(h => {
-    const card = document.createElement('div'); card.className = 'neu p-6 reveal';
-    card.innerHTML = `<div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:linear-gradient(135deg,${h.color}33,${h.color}22);"><i class="fas ${h.icon} text-xl" style="color:${h.color};"></i></div><h3 class="font-bold mb-2">${h.title}</h3><p class="text-sm leading-relaxed" style="color:var(--neu-sub);">${h.desc}</p>`;
-    highlightsEl.appendChild(card);
-  });
-
-  // =====================================================================
-  //  SKILLS
-  // =====================================================================
-  document.getElementById('skills-subtitle').textContent = p.skills.subtitle;
-
-  const skillTabsEl = document.getElementById('skill-tabs');
-  const skillsGridEl = document.getElementById('skills-grid');
-  let activeSkillTab = p.skills.categories[0].name;
-
-  function renderSkills(category) {
-    skillsGridEl.innerHTML = '';
-    const cat = p.skills.categories.find(c => c.name === category) || p.skills.categories[0];
-    cat.items.forEach((skill, i) => {
-      const card = document.createElement('div'); card.className = 'neu p-6 reveal'; card.style.transitionDelay = `${i * 0.08}s`;
-      card.innerHTML = `<div class="flex items-center justify-between mb-3"><span class="font-semibold text-sm">${skill.name}</span><span class="font-mono text-xs font-bold" style="color:var(--accent);">${skill.level}%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-level="${skill.level}"></div></div>`;
-      skillsGridEl.appendChild(card);
-    });
-    setTimeout(() => { skillsGridEl.querySelectorAll('.skill-bar-fill').forEach(bar => { bar.style.width = bar.dataset.level + '%'; bar.closest('.reveal')?.classList.add('revealed'); }); }, 150);
-  }
-
-  p.skills.categories.forEach(cat => {
-    const btn = document.createElement('button'); btn.className = 'neu-btn flex items-center gap-2 px-5 py-2.5 text-sm font-semibold skill-tab-btn'; btn.style.color = 'var(--neu-sub)'; btn.dataset.cat = cat.name;
-    btn.innerHTML = `<i class="fas ${cat.icon} text-xs"></i> ${cat.name}`;
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.skill-tab-btn').forEach(b => { b.style.color = 'var(--neu-sub)'; b.style.boxShadow = ''; });
-      btn.style.color = 'var(--accent)'; btn.style.boxShadow = `5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light), 0 0 20px var(--accent-glow)`;
-      renderSkills(cat.name);
-    });
-    skillTabsEl.appendChild(btn);
-  });
-  const firstTab = skillTabsEl.querySelector('.skill-tab-btn');
-  if (firstTab) { firstTab.style.color = 'var(--accent)'; firstTab.style.boxShadow = `5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light), 0 0 20px var(--accent-glow)`; }
-  renderSkills(activeSkillTab);
-
-  const otherTechEl = document.getElementById('other-tech');
-  p.skills.otherTech.forEach(tech => {
-    const tag = document.createElement('span'); tag.className = 'tech-tag'; tag.textContent = tech; otherTechEl.appendChild(tag);
-  });
-
-  // =====================================================================
-  //  PROJECTS  (with lightbox)
-  // =====================================================================
-  document.getElementById('projects-subtitle').textContent = p.projects.subtitle;
-
-  const cats = ['All', ...new Set(p.projects.items.map(pr => pr.category))];
-  const projectFiltersEl = document.getElementById('project-filters');
-  const projectsGridEl   = document.getElementById('projects-grid');
-  let activeFilter = 'All';
-  let currentProjectIdx = null;
-
-  function renderProjects(filter) {
-    projectsGridEl.innerHTML = '';
-    const items = filter === 'All' ? p.projects.items : p.projects.items.filter(pr => pr.category === filter);
-    items.forEach((project, i) => {
-      const card = document.createElement('div');
-      card.className = 'project-card neu reveal cursor-pointer'; card.style.transitionDelay = `${i * 0.1}s`;
-      card.innerHTML = `
-        <div class="relative overflow-hidden" style="border-radius:20px 20px 0 0;height:220px;">
-          <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110" loading="lazy" />
-          <div class="absolute inset-0 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(99,102,241,0.85),rgba(139,92,246,0.85));opacity:0;transition:opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0'">
-            <span class="text-white font-bold flex items-center gap-2"><i class="fas fa-expand-alt"></i> View Details</span>
-          </div>
-          ${project.featured ? `<div class="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold text-white" style="background:linear-gradient(135deg,var(--accent),#8b5cf6);">Featured</div>` : ''}
-        </div>
-        <div class="p-6">
-          <div class="flex items-start justify-between mb-2">
-            <h3 class="font-bold text-lg">${project.title}</h3>
-            <span class="tech-tag ml-2 flex-shrink-0">${project.category}</span>
-          </div>
-          <p class="text-sm leading-relaxed mb-4" style="color:var(--neu-sub);">${project.description}</p>
-          <div class="flex flex-wrap gap-2 mb-5">${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}</div>
-          <div class="flex gap-3">
-            ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="flex items-center gap-1.5 text-xs font-semibold hover:opacity-70" style="color:var(--accent);"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : ''}
-            ${project.repoUrl ? `<a href="${project.repoUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="flex items-center gap-1.5 text-xs font-semibold hover:opacity-70" style="color:var(--neu-sub);"><i class="fab fa-github"></i> Source</a>` : ''}
-          </div>
-        </div>
-      `;
-      // Find the original index in the full array
-      const origIdx = p.projects.items.indexOf(project);
-      card.addEventListener('click', () => openLightbox(origIdx));
-      projectsGridEl.appendChild(card);
-    });
-    setTimeout(() => { projectsGridEl.querySelectorAll('.reveal').forEach(el => el.classList.add('revealed')); }, 100);
-  }
-
-  cats.forEach(cat => {
-    const btn = document.createElement('button'); btn.className = 'neu-btn px-5 py-2.5 text-sm font-semibold project-filter-btn'; btn.style.color = cat === 'All' ? 'var(--accent)' : 'var(--neu-sub)';
-    if (cat === 'All') btn.style.boxShadow = `5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light), 0 0 20px var(--accent-glow)`;
-    btn.textContent = cat;
-    btn.addEventListener('click', () => {
-      activeFilter = cat;
-      document.querySelectorAll('.project-filter-btn').forEach(b => { b.style.color = 'var(--neu-sub)'; b.style.boxShadow = ''; });
-      btn.style.color = 'var(--accent)'; btn.style.boxShadow = `5px 5px 12px var(--neu-dark), -5px -5px 12px var(--neu-light), 0 0 20px var(--accent-glow)`;
-      renderProjects(cat);
-    });
-    projectFiltersEl.appendChild(btn);
-  });
-  renderProjects('All');
-
-  // ── LIGHTBOX ──────────────────────────────────────────────────────────
-  const lightbox      = document.getElementById('lightbox');
-  const lightboxInner = document.getElementById('lightbox-inner');
-  let lbCarouselIdx   = 0;
-
-  function openLightbox(idx) {
-    const pr = p.projects.items[idx];
-    currentProjectIdx = idx;
-    lbCarouselIdx = 0;
-    const shots = pr.screenshots && pr.screenshots.length ? pr.screenshots : [pr.image];
-
-    lightboxInner.innerHTML = `
-      <!-- Close -->
-      <button id="lb-close" class="absolute top-4 right-4 z-10 neu-btn w-10 h-10 flex items-center justify-center text-lg" style="color:var(--neu-text);" aria-label="Close"><i class="fas fa-times"></i></button>
-      <!-- Carousel -->
-      <div class="relative" style="height:380px;background:#000;overflow:hidden;">
-        <img id="lb-main-img" src="${shots[0]}" alt="${pr.title} screenshot 1" class="carousel-img" />
-        ${shots.length > 1 ? `
-        <button id="lb-prev-img" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white" style="background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-        <button id="lb-next-img" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white" style="background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-          ${shots.map((_,i) => `<div class="lb-dot w-2 h-2 rounded-full transition-all ${i===0?'bg-white scale-125':'bg-white opacity-40'}" data-i="${i}" style="cursor:pointer;"></div>`).join('')}
-        </div>` : ''}
-      </div>
-      <!-- Thumbnails -->
-      ${shots.length > 1 ? `<div class="flex gap-2 px-6 pt-4 overflow-x-auto">${shots.map((s,i) => `<img src="${s}" alt="Screenshot ${i+1}" class="carousel-thumb ${i===0?'active':''}" data-thumb="${i}" loading="lazy" />`).join('')}</div>` : ''}
-      <!-- Content -->
-      <div class="p-6 md:p-8">
-        <div class="flex items-start justify-between flex-wrap gap-3 mb-4">
-          <div>
-            <h2 class="text-2xl font-black">${pr.title}</h2>
-            <span class="tech-tag mt-1">${pr.category}</span>
-          </div>
-          <div class="flex gap-3">
-            ${pr.liveUrl ? `<a href="${pr.liveUrl}" target="_blank" rel="noopener" class="neu-btn-accent px-5 py-2.5 flex items-center gap-2 text-sm font-bold"><i class="fas fa-external-link-alt"></i> Live</a>` : ''}
-            ${pr.repoUrl ? `<a href="${pr.repoUrl}" target="_blank" rel="noopener" class="neu-btn px-5 py-2.5 flex items-center gap-2 text-sm font-bold" style="color:var(--neu-text);"><i class="fab fa-github"></i> Code</a>` : ''}
-          </div>
-        </div>
-        <p class="leading-relaxed mb-6" style="color:var(--neu-sub);">${pr.fullDescription || pr.description}</p>
-        <div class="grid md:grid-cols-2 gap-6 mb-6">
-          ${pr.challenges && pr.challenges.length ? `<div><h4 class="font-bold mb-3 flex items-center gap-2"><span style="color:#f59e0b;"><i class="fas fa-exclamation-triangle"></i></span> Challenges</h4><ul class="space-y-2">${pr.challenges.map(c=>`<li class="flex items-start gap-2 text-sm"><span style="color:#f59e0b;margin-top:3px;">▹</span><span style="color:var(--neu-sub);">${c}</span></li>`).join('')}</ul></div>` : ''}
-          ${pr.outcomes && pr.outcomes.length ? `<div><h4 class="font-bold mb-3 flex items-center gap-2"><span style="color:#10b981;"><i class="fas fa-check-circle"></i></span> Outcomes</h4><ul class="space-y-2">${pr.outcomes.map(o=>`<li class="flex items-start gap-2 text-sm"><span style="color:#10b981;margin-top:3px;">▹</span><span style="color:var(--neu-sub);">${o}</span></li>`).join('')}</ul></div>` : ''}
-        </div>
-        <div class="flex flex-wrap gap-2">${pr.tech.map(t=>`<span class="tech-tag">${t}</span>`).join('')}</div>
-      </div>
-    `;
-
-    // Carousel logic
-    function setCarouselImg(i) {
-      lbCarouselIdx = i;
-      const img = lightboxInner.querySelector('#lb-main-img');
-      if (img) { img.style.opacity = '0'; setTimeout(() => { img.src = shots[i]; img.alt = `${pr.title} screenshot ${i+1}`; img.style.opacity = '1'; }, 200); }
-      lightboxInner.querySelectorAll('.lb-dot').forEach((d,j) => { d.className = `lb-dot w-2 h-2 rounded-full transition-all ${j===i?'bg-white scale-125':'bg-white opacity-40'}`; d.style.cursor='pointer'; });
-      lightboxInner.querySelectorAll('.carousel-thumb').forEach((t,j) => t.classList.toggle('active', j===i));
-    }
-
-    const prevBtn = lightboxInner.querySelector('#lb-prev-img');
-    const nextBtn = lightboxInner.querySelector('#lb-next-img');
-    if (prevBtn) prevBtn.addEventListener('click', () => setCarouselImg((lbCarouselIdx - 1 + shots.length) % shots.length));
-    if (nextBtn) nextBtn.addEventListener('click', () => setCarouselImg((lbCarouselIdx + 1) % shots.length));
-
-    lightboxInner.querySelectorAll('.lb-dot').forEach(d => d.addEventListener('click', () => setCarouselImg(+d.dataset.i)));
-    lightboxInner.querySelectorAll('.carousel-thumb').forEach(t => t.addEventListener('click', () => setCarouselImg(+t.dataset.thumb)));
-    lightboxInner.querySelector('#lb-close').addEventListener('click', closeLightbox);
-
-    lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
-  // =====================================================================
-  //  EXPERIENCE — Horizontal timeline (desktop) + Vertical stepper (mobile)
-  // =====================================================================
-  const tlTrack  = document.getElementById('timeline-track');
-  const tlMobile = document.getElementById('timeline-mobile');
-  const tlScroll = document.getElementById('timeline-scroll');
-
-  const expIcons = ['fa-briefcase','fa-rocket','fa-laptop-code','fa-graduation-cap','fa-star','fa-code'];
-
-  p.experience.forEach((exp, i) => {
-    // DESKTOP item
-    const item = document.createElement('div');
-    item.className = 'timeline-item';
-    item.innerHTML = `
-      <div class="timeline-milestone" title="${exp.company}" data-idx="${i}">
-        <i class="fas ${exp.icon || expIcons[i % expIcons.length]}"></i>
-      </div>
-      <div class="timeline-card neu p-5 w-full mt-4">
-        <div class="flex items-center gap-3 mb-3">
-          <img src="${exp.logo}" alt="${exp.company}" class="w-10 h-10 rounded-lg flex-shrink-0" loading="lazy" />
-          <div>
-            <h3 class="font-bold text-sm leading-tight">${exp.role}</h3>
-            <p class="text-xs font-semibold mt-0.5" style="color:var(--accent);">${exp.company}</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-2 mb-3 text-xs" style="color:var(--neu-sub);">
-          <span><i class="fas fa-calendar mr-1"></i>${exp.period}</span>
-          <span><i class="fas fa-map-marker-alt mr-1"></i>${exp.location}</span>
-          <span class="tech-tag">${exp.type}</span>
-        </div>
-        <p class="text-xs leading-relaxed mb-3" style="color:var(--neu-sub);">${exp.description}</p>
-        <ul class="space-y-1.5 mb-3">${exp.achievements.map(a=>`<li class="flex items-start gap-1.5 text-xs"><span style="color:var(--accent);margin-top:1px;">▹</span><span style="color:var(--neu-sub);">${a}</span></li>`).join('')}</ul>
-        <div class="flex flex-wrap gap-1.5">${exp.tech.map(t=>`<span class="tech-tag" style="font-size:0.65rem;padding:2px 8px;">${t}</span>`).join('')}</div>
-      </div>
-    `;
-    tlTrack.appendChild(item);
-
-    // MOBILE stepper
-    const si = document.createElement('div');
-    si.className = 'stepper-item reveal';
-    si.innerHTML = `
-      <div class="stepper-dot flex-shrink-0 self-start"><i class="fas ${exp.icon || expIcons[i % expIcons.length]}"></i></div>
-      <div class="flex-1 neu p-5">
-        <div class="flex items-center gap-3 mb-3">
-          <img src="${exp.logo}" alt="${exp.company}" class="w-10 h-10 rounded-lg flex-shrink-0" loading="lazy" />
-          <div>
-            <h3 class="font-bold leading-tight">${exp.role}</h3>
-            <p class="text-sm font-semibold mt-0.5" style="color:var(--accent);">${exp.company}</p>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-2 mb-3 text-xs" style="color:var(--neu-sub);">
-          <span><i class="fas fa-calendar mr-1"></i>${exp.period}</span>
-          <span><i class="fas fa-map-marker-alt mr-1"></i>${exp.location}</span>
-        </div>
-        <p class="text-sm leading-relaxed mb-3" style="color:var(--neu-sub);">${exp.description}</p>
-        <ul class="space-y-2 mb-3">${exp.achievements.map(a=>`<li class="flex items-start gap-2 text-sm"><span style="color:var(--accent);margin-top:2px;">▹</span><span style="color:var(--neu-sub);">${a}</span></li>`).join('')}</ul>
-        <div class="flex flex-wrap gap-2">${exp.tech.map(t=>`<span class="tech-tag">${t}</span>`).join('')}</div>
-      </div>
-    `;
-    tlMobile.appendChild(si);
-  });
-
-  // Scroll arrows + connector fill
-  const tlPrev = document.getElementById('tl-prev');
-  const tlNext = document.getElementById('tl-next');
-  const SCROLL_STEP = 340;
-  tlPrev.addEventListener('click', () => tlScroll.scrollBy({left:-SCROLL_STEP,behavior:'smooth'}));
-  tlNext.addEventListener('click', () => tlScroll.scrollBy({left:SCROLL_STEP,behavior:'smooth'}));
-
-  tlScroll.addEventListener('scroll', () => {
-    const fill = document.getElementById('timeline-fill');
-    if (fill) { const pct = tlScroll.scrollLeft / (tlScroll.scrollWidth - tlScroll.clientWidth); fill.style.width = (pct * 100) + '%'; }
-  });
-
-  // Drag-to-scroll for desktop timeline
-  let tlDragging = false, tlStartX, tlScrollLeft2;
-  tlScroll.addEventListener('mousedown', e => { tlDragging=true; tlStartX=e.pageX-tlScroll.offsetLeft; tlScrollLeft2=tlScroll.scrollLeft; });
-  document.addEventListener('mouseup', () => tlDragging = false);
-  document.addEventListener('mousemove', e => { if (!tlDragging) return; e.preventDefault(); const x=e.pageX-tlScroll.offsetLeft; const walk=(x-tlStartX)*1.5; tlScroll.scrollLeft=tlScrollLeft2-walk; });
-
-  // Animate connector fill on reveal
-  setTimeout(() => {
-    const fill = document.getElementById('timeline-fill');
-    if (fill) fill.style.width = '100%';
-  }, 500);
-
-  // =====================================================================
-  //  EDUCATION
-  // =====================================================================
-  const eduEl = document.getElementById('education-grid');
-  p.education.forEach(edu => {
-    const card = document.createElement('div'); card.className = 'neu p-8 reveal';
-    card.innerHTML = `<div class="flex items-start gap-4 mb-5"><img src="${edu.logo}" alt="${edu.institution}" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" loading="lazy" /><div><h3 class="font-bold text-lg leading-tight">${edu.degree}</h3><p class="font-semibold text-sm mt-1" style="color:var(--accent);">${edu.institution}</p><div class="flex items-center gap-3 mt-1 text-xs" style="color:var(--neu-sub);"><span><i class="fas fa-calendar mr-1"></i>${edu.period}</span>${edu.gpa?`<span><i class="fas fa-star mr-1"></i>GPA: ${edu.gpa}</span>`:''}</div></div></div><p class="text-sm leading-relaxed mb-4" style="color:var(--neu-sub);">${edu.description}</p><ul class="space-y-2">${edu.achievements.map(a=>`<li class="flex items-center gap-2 text-sm"><span style="color:var(--accent);">✦</span><span style="color:var(--neu-sub);">${a}</span></li>`).join('')}</ul>`;
-    eduEl.appendChild(card);
-  });
-
-  // =====================================================================
-  //  CERTIFICATIONS
-  // =====================================================================
-  document.getElementById('certs-subtitle').textContent = p.certifications.subtitle;
-  const certsGrid = document.getElementById('certs-grid');
-  p.certifications.items.forEach((cert, i) => {
-    const card = document.createElement('div');
-    card.className = 'cert-card cert-border p-6 reveal';
-    card.style.transitionDelay = `${i * 0.08}s`;
-    card.innerHTML = `
-      <div class="flex items-start gap-4 mb-4">
-        <img src="${cert.issuerLogo}" alt="${cert.issuer}" class="w-12 h-12 rounded-xl flex-shrink-0 object-cover" loading="lazy" />
-        <div class="flex-1">
-          <h3 class="font-bold text-sm leading-tight">${cert.name}</h3>
-          <p class="text-xs mt-1 font-semibold" style="color:${cert.badgeColor};">${cert.issuer}</p>
-        </div>
-      </div>
-      <div class="flex items-center justify-between flex-wrap gap-2">
-        <span class="flex items-center gap-1 text-xs" style="color:var(--neu-sub);"><i class="fas fa-calendar-alt" style="color:var(--accent);"></i> ${cert.date}</span>
-        ${cert.credentialId ? `<span class="font-mono text-xs" style="color:var(--neu-sub);">ID: ${cert.credentialId}</span>` : ''}
-      </div>
-      ${cert.verifyUrl ? `<a href="${cert.verifyUrl}" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold hover:opacity-70 transition-opacity" style="color:${cert.badgeColor};"><i class="fas fa-external-link-alt"></i> Verify Credential</a>` : ''}
-    `;
-    certsGrid.appendChild(card);
-  });
-
-  // =====================================================================
-  //  OPEN SOURCE
-  // =====================================================================
-  document.getElementById('oss-subtitle').textContent = p.openSource.subtitle;
-  document.getElementById('oss-profile-btn').href = p.openSource.githubProfileUrl;
-
-  const ossGrid = document.getElementById('oss-grid');
-  p.openSource.repos.forEach((repo, i) => {
-    const card = document.createElement('a');
-    card.href = repo.url; card.target = '_blank'; card.rel = 'noopener noreferrer';
-    card.className = 'neu p-6 reveal block group'; card.style.transitionDelay = `${i * 0.08}s`;
-    const langColor = getLangColor(repo.language);
-    card.innerHTML = `
-      <div class="flex items-start justify-between mb-3">
-        <div class="flex items-center gap-2">
-          <i class="fab fa-github" style="color:var(--accent);font-size:1.2rem;"></i>
-          <h3 class="font-bold text-sm group-hover:text-accent-500 transition-colors" style="color:var(--accent);">${repo.name}</h3>
-        </div>
-      </div>
-      <p class="text-sm leading-relaxed mb-4" style="color:var(--neu-sub);">${repo.description}</p>
-      <div class="flex items-center gap-4 text-xs" style="color:var(--neu-sub);">
-        <span class="flex items-center gap-1.5">
-          <span class="lang-dot" data-lang="${repo.language}" style="background:${langColor};width:12px;height:12px;border-radius:50%;display:inline-block;"></span>
-          ${repo.language}
-        </span>
-        <span class="flex items-center gap-1"><i class="fas fa-star" style="color:#f59e0b;"></i> ${formatNum(repo.stars)}</span>
-        <span class="flex items-center gap-1"><i class="fas fa-code-fork" style="color:var(--accent);"></i> ${formatNum(repo.forks)}</span>
-      </div>
-    `;
-    ossGrid.appendChild(card);
-  });
-
-  function getLangColor(lang) {
-    const map = { JavaScript:'#f7df1e', TypeScript:'#3178c6', Python:'#3572A5', Rust:'#dea584', Go:'#00ADD8', CSS:'#563d7c', HTML:'#e34c26', Vue:'#41b883', React:'#61dafb', PHP:'#777bb4', Ruby:'#701516', Java:'#b07219' };
-    return map[lang] || '#8b8b8b';
-  }
-  function formatNum(n) { return n >= 1000 ? (n/1000).toFixed(1)+'k' : n; }
-
-  // Animated counter
-  function animateOSSCounter() {
-    const el = document.getElementById('oss-counter');
-    const target = p.openSource.totalContributions;
-    let current = 0;
-    const step = Math.ceil(target / 60);
-    const interval = setInterval(() => {
-      current = Math.min(current + step, target);
-      el.textContent = current.toLocaleString();
-      if (current >= target) clearInterval(interval);
-    }, 20);
-  }
-
-  // =====================================================================
-  //  BLOG
-  // =====================================================================
-  document.getElementById('blog-subtitle').textContent = p.blog.subtitle;
-  document.getElementById('blog-all-btn').href = p.blog.allPostsUrl;
-
-  const blogGrid = document.getElementById('blog-grid');
-  p.blog.posts.forEach((post, i) => {
-    const card = document.createElement('article');
-    card.className = 'blog-card neu overflow-hidden reveal'; card.style.transitionDelay = `${i * 0.08}s`;
-    card.innerHTML = `
-      <div class="relative overflow-hidden" style="height:200px;">
-        <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover transition-transform duration-500" loading="lazy" style="transition:transform 0.5s ease;" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform='scale(1)'" />
-        <div class="absolute top-3 left-3">
-          <span class="px-3 py-1 rounded-full text-white text-xs font-bold" style="background:${post.tagColor};">${post.tag}</span>
-        </div>
-      </div>
-      <div class="p-6">
-        <div class="flex items-center justify-between mb-3 text-xs" style="color:var(--neu-sub);">
-          <span><i class="fas fa-calendar mr-1" style="color:var(--accent);"></i>${post.date}</span>
-          <span><i class="fas fa-clock mr-1" style="color:var(--accent);"></i>${post.readTime}</span>
-        </div>
-        <h3 class="font-bold text-lg leading-snug mb-3">${post.title}</h3>
-        <p class="text-sm leading-relaxed mb-5" style="color:var(--neu-sub);">${post.excerpt}</p>
-        <a href="${post.readMoreUrl}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-bold transition-opacity hover:opacity-70" style="color:var(--accent);">
-          Read Article <i class="fas fa-arrow-right text-xs"></i>
-        </a>
-      </div>
-    `;
-    blogGrid.appendChild(card);
-  });
-
-  // =====================================================================
-  //  TESTIMONIALS
-  // =====================================================================
-  const testimonialsEl = document.getElementById('testimonials-grid');
-  p.testimonials.forEach((t, i) => {
-    const card = document.createElement('div'); card.className = 'neu p-8 reveal'; card.style.transitionDelay = `${i * 0.1}s`;
-    const stars = '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating);
-    card.innerHTML = `<div class="text-2xl mb-4" style="color:var(--accent);">❝</div><p class="text-sm leading-relaxed mb-6 italic" style="color:var(--neu-sub);">"${t.quote}"</p><div class="flex items-center gap-3"><img src="${t.avatar}" alt="${t.name}" class="w-12 h-12 rounded-full object-cover" loading="lazy" /><div><p class="font-bold text-sm">${t.name}</p><p class="text-xs" style="color:var(--neu-sub);">${t.role}</p><p class="text-yellow-400 text-sm mt-0.5">${stars}</p></div></div>`;
-    testimonialsEl.appendChild(card);
-  });
-
-  // =====================================================================
-  //  CONTACT
-  // =====================================================================
-  document.getElementById('contact-subtitle').textContent = p.contact.subtitle;
-
-  const contactInfoEl = document.getElementById('contact-info');
-  p.contact.contactInfo.forEach(info => {
-    const item = document.createElement('a'); item.href = info.href; item.className = 'flex items-center gap-4 group';
-    item.innerHTML = `<div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all group-hover:scale-110" style="background:linear-gradient(135deg,var(--accent),#8b5cf6);"><i class="fas ${info.icon} text-white"></i></div><div><p class="text-xs" style="color:var(--neu-sub);">${info.label}</p><p class="font-semibold text-sm">${info.value}</p></div>`;
-    contactInfoEl.appendChild(item);
-  });
-
-  buildSocials(document.getElementById('contact-socials'));
-
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = document.getElementById('cf-submit');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...'; btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-      document.getElementById('cf-success').classList.remove('hidden');
-      this.reset();
-      setTimeout(() => { btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message'; btn.disabled = false; document.getElementById('cf-success').classList.add('hidden'); }, 4000);
-    }, 1500);
-  });
-
-  // =====================================================================
-  //  FOOTER
-  // =====================================================================
-  document.getElementById('footer-name').textContent    = p.personal.name;
-  document.getElementById('footer-tagline').textContent = p.personal.tagline;
-  document.getElementById('footer-copy').textContent    = `© ${new Date().getFullYear()} ${p.personal.name}. All rights reserved.`;
-  buildSocials(document.getElementById('footer-socials'));
-
-  // =====================================================================
-  //  REVEAL ON SCROLL
-  // =====================================================================
-  function initReveal() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          const bar = entry.target.querySelector('.skill-bar-fill');
-          if (bar) bar.style.width = bar.dataset.level + '%';
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
-
-    // Trigger desktop timeline connector when in view
-    const tlDesktop = document.getElementById('timeline-desktop');
-    if (tlDesktop) {
-      const tlObs = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          setTimeout(() => { const fill = document.getElementById('timeline-fill'); if (fill) fill.style.width = '100%'; }, 300);
-          tlObs.disconnect();
-        }
-      }, {threshold: 0.2});
-      tlObs.observe(tlDesktop);
-    }
-
-    // OSS counter trigger
-    const ossSection = document.getElementById('opensource');
-    if (ossSection) {
-      const ossObs = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) { animateOSSCounter(); ossObs.disconnect(); }
-      }, {threshold: 0.3});
-      ossObs.observe(ossSection);
-    }
-  }
-
-  // =====================================================================
-  //  CURSOR GLOW
-  // =====================================================================
-  const glow = document.createElement('div');
-  glow.style.cssText = `position:fixed;pointer-events:none;z-index:9998;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,var(--accent-glow) 0%,transparent 70%);transform:translate(-50%,-50%);transition:opacity 0.3s;opacity:0;mix-blend-mode:screen;`;
-  document.body.appendChild(glow);
-  let glowTimeout;
-  document.addEventListener('mousemove', e => {
-    glow.style.opacity = '0.6'; glow.style.left = e.clientX+'px'; glow.style.top = e.clientY+'px';
-    clearTimeout(glowTimeout); glowTimeout = setTimeout(() => { glow.style.opacity = '0'; }, 2000);
-  });
-
-}); // end DOMContentLoaded
-</script>
+<script src="https://cdn.jsdelivr.net/gh/Godszeal/DevPortfolio@main/app.js" data-config="https://cdn.jsdelivr.net/gh/Godszeal/DevPortfolio@main/data.json"></script>
 
 
 </body></html>

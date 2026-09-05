@@ -1,0 +1,875 @@
+{
+  "seo": {
+    "siteTitle": "Alex Johnson — Full-Stack Developer",
+    "siteDescription": "Full-stack developer crafting beautiful, performant web apps with React, Node.js, and modern cloud infrastructure.",
+    "keywords": "full-stack developer, react, node.js, typescript, portfolio, web developer, frontend, backend",
+    "author": "Alex Johnson",
+    "canonicalUrl": "https://alexjohnson.dev",
+    "ogImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=630&fit=crop",
+    "twitterHandle": "@alexjohnsondev",
+    "themeColor": "#6366f1",
+    "favicon": "https://fav.farm/💻",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Alex Johnson",
+      "url": "https://alexjohnson.dev",
+      "sameAs": [
+        "https://github.com",
+        "https://linkedin.com"
+      ]
+    }
+  },
+  "logo": {
+    "text": "&lt;/Dev&gt;",
+    "image": "",
+    "alt": "Logo"
+  },
+  "personal": {
+    "name": "Alex Johnson",
+    "initials": "AJ",
+    "role": "Full-Stack Developer",
+    "tagline": "Building elegant solutions to complex problems",
+    "email": "alex@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "availability": "Available for work",
+    "cvUrl": "#",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "typingRoles": [
+      "Full-Stack Developer",
+      "UI/UX Enthusiast",
+      "Open Source Contributor",
+      "Problem Solver",
+      "Coffee Addict ☕"
+    ],
+    "bio": "I craft beautiful, performant web applications with modern technologies. Passionate about clean code, great UX, and building products that make a difference.",
+    "primaryCTA": {
+      "label": "View My Work",
+      "href": "#projects"
+    },
+    "secondaryCTA": {
+      "label": "Contact Me",
+      "href": "#contact"
+    }
+  },
+  "stats": [
+    {
+      "value": "5+",
+      "label": "Years Experience",
+      "icon": "fa-briefcase"
+    },
+    {
+      "value": "40+",
+      "label": "Projects Built",
+      "icon": "fa-code"
+    },
+    {
+      "value": "20+",
+      "label": "Happy Clients",
+      "icon": "fa-smile"
+    },
+    {
+      "value": "10+",
+      "label": "Open Source",
+      "icon": "fa-github"
+    }
+  ],
+  "badges": {
+    "experience": "5+ Yrs",
+    "projects": "40+ Projects"
+  },
+  "socials": [
+    {
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com",
+      "label": "GitHub"
+    },
+    {
+      "icon": "fa-brands fa-linkedin",
+      "url": "https://linkedin.com",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "fa-brands fa-twitter",
+      "url": "https://twitter.com",
+      "label": "Twitter"
+    },
+    {
+      "icon": "fa-brands fa-dribbble",
+      "url": "https://dribbble.com",
+      "label": "Dribbble"
+    },
+    {
+      "icon": "fa-solid fa-globe",
+      "url": "https://example.com",
+      "label": "Website"
+    }
+  ],
+  "about": {
+    "title": "Who I Am",
+    "bio1": "I'm a passionate full-stack developer with over 5 years of experience building web applications that are both functional and beautiful. I believe in writing clean, maintainable code and creating user experiences that delight.",
+    "bio2": "When I'm not coding, you can find me hiking in the mountains, experimenting with new recipes in the kitchen, or contributing to open-source projects I care about.",
+    "details": [
+      {
+        "label": "Name",
+        "value": "Alex Johnson",
+        "icon": "fa-user"
+      },
+      {
+        "label": "Location",
+        "value": "San Francisco, CA",
+        "icon": "fa-map-marker-alt"
+      },
+      {
+        "label": "Email",
+        "value": "alex@example.com",
+        "icon": "fa-envelope"
+      },
+      {
+        "label": "Status",
+        "value": "Open to opportunities",
+        "icon": "fa-circle-check"
+      }
+    ],
+    "highlights": [
+      {
+        "icon": "fa-lightbulb",
+        "color": "#6366f1",
+        "title": "Problem Solver",
+        "desc": "Love tackling complex challenges with elegant, scalable solutions."
+      },
+      {
+        "icon": "fa-palette",
+        "color": "#8b5cf6",
+        "title": "Design Focused",
+        "desc": "Strong eye for detail and passion for beautiful user interfaces."
+      },
+      {
+        "icon": "fa-rocket",
+        "color": "#ec4899",
+        "title": "Performance First",
+        "desc": "Obsessed with speed, optimisation, and delivering fast experiences."
+      },
+      {
+        "icon": "fa-users",
+        "color": "#06b6d4",
+        "title": "Team Player",
+        "desc": "Thrive in collaborative environments and love mentoring others."
+      }
+    ]
+  },
+  "skills": {
+    "subtitle": "My technical toolkit — constantly evolving",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "fa-layer-group",
+        "items": [
+          {
+            "name": "React / Next.js",
+            "level": 95
+          },
+          {
+            "name": "TypeScript",
+            "level": 90
+          },
+          {
+            "name": "Vue.js",
+            "level": 80
+          },
+          {
+            "name": "Tailwind CSS",
+            "level": 92
+          },
+          {
+            "name": "Framer Motion",
+            "level": 75
+          }
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "fa-server",
+        "items": [
+          {
+            "name": "Node.js / Express",
+            "level": 90
+          },
+          {
+            "name": "Python / FastAPI",
+            "level": 82
+          },
+          {
+            "name": "PostgreSQL",
+            "level": 85
+          },
+          {
+            "name": "MongoDB",
+            "level": 80
+          },
+          {
+            "name": "GraphQL",
+            "level": 75
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "icon": "fa-cloud",
+        "items": [
+          {
+            "name": "Docker",
+            "level": 85
+          },
+          {
+            "name": "AWS / GCP",
+            "level": 78
+          },
+          {
+            "name": "CI/CD Pipelines",
+            "level": 80
+          },
+          {
+            "name": "Kubernetes",
+            "level": 65
+          },
+          {
+            "name": "Terraform",
+            "level": 60
+          }
+        ]
+      }
+    ],
+    "otherTech": [
+      "Git",
+      "Redis",
+      "WebSockets",
+      "REST APIs",
+      "JWT",
+      "Stripe",
+      "Firebase",
+      "Supabase",
+      "Prisma",
+      "Jest",
+      "Cypress",
+      "Figma",
+      "Linux",
+      "Nginx",
+      "Webpack",
+      "Vite"
+    ]
+  },
+  "projects": {
+    "subtitle": "A selection of my best work across different domains",
+    "items": [
+      {
+        "title": "NovaMart E-Commerce",
+        "category": "Full-Stack",
+        "description": "A high-performance e-commerce platform with real-time inventory, Stripe payments, and an AI recommendation engine serving 50k+ users.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "NovaMart is a full-featured e-commerce solution built from the ground up with scalability in mind. It integrates Stripe for seamless payments, uses Redis for cart caching, and features a custom AI recommendation engine powered by collaborative filtering.",
+        "challenges": [
+          "Optimising real-time inventory sync across multiple warehouses",
+          "Implementing fraud detection without adding checkout friction",
+          "Achieving sub-200ms page loads at 50k concurrent users"
+        ],
+        "outcomes": [
+          "Increased average order value by 32% via AI recommendations",
+          "Reduced cart abandonment rate from 70% to 48%",
+          "Achieved 99.97% uptime over 12 months"
+        ],
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "PostgreSQL",
+          "Stripe",
+          "Redis"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": true
+      },
+      {
+        "title": "Taskly — Project Manager",
+        "category": "SaaS",
+        "description": "A Notion-inspired project management tool with drag-and-drop boards, real-time collaboration, and smart task automation.",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "Taskly brings the best of Notion, Jira, and Linear into a single, fast, intuitive workspace. Real-time collaboration is powered by CRDTs over WebSockets, and task automation uses a custom rule engine.",
+        "challenges": [
+          "Building conflict-free real-time collaborative editing (CRDT)",
+          "Designing an intuitive drag-and-drop UX for nested task trees",
+          "Keeping WebSocket connections stable across unreliable networks"
+        ],
+        "outcomes": [
+          "Reached 5,000 MAUs within 3 months of launch",
+          "Teams reported 40% reduction in status-update meetings",
+          "Featured in Product Hunt's top 5 launches of the week"
+        ],
+        "tech": [
+          "React",
+          "Node.js",
+          "MongoDB",
+          "WebSockets",
+          "Docker"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": true
+      },
+      {
+        "title": "CodeLens — AI Code Review",
+        "category": "AI / ML",
+        "description": "An AI-powered code review tool that integrates with GitHub PRs to provide instant, context-aware feedback and security analysis.",
+        "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "CodeLens hooks into the GitHub API to review every pull request automatically. It uses a fine-tuned LLM to detect security vulnerabilities, style violations, and performance anti-patterns, providing inline comments directly on the diff.",
+        "challenges": [
+          "Fine-tuning an LLM on proprietary code review datasets",
+          "Keeping review latency under 30 seconds for large diffs",
+          "Reducing false-positive rate from 25% to under 5%"
+        ],
+        "outcomes": [
+          "Adopted by 200+ engineering teams within 6 months",
+          "Reduced PR review cycle time by an average of 3 hours",
+          "Caught 1,200+ security issues before they reached production"
+        ],
+        "tech": [
+          "Python",
+          "FastAPI",
+          "OpenAI",
+          "React",
+          "PostgreSQL"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": true
+      },
+      {
+        "title": "WeatherFlow Dashboard",
+        "category": "Frontend",
+        "description": "A beautiful weather dashboard with interactive maps, 10-day forecasts, and air quality data.",
+        "image": "https://images.unsplash.com/photo-1504608524841-42584120d693?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1504608524841-42584120d693?w=900&h=500&fit=crop",
+          "https://images.unsplash.com/photo-1561484930-974554019ade?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "WeatherFlow visualises real-time and forecast weather data using interactive D3 charts, Mapbox maps, and smooth animations. Supports dark mode and offline caching via Service Workers.",
+        "challenges": [
+          "Rendering smooth animated SVG wind direction vectors",
+          "Handling inconsistent data from multiple weather APIs"
+        ],
+        "outcomes": [
+          "10k monthly active users within 2 months",
+          "Featured on CSS Design Awards"
+        ],
+        "tech": [
+          "Vue.js",
+          "D3.js",
+          "OpenWeather API",
+          "Tailwind"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": false
+      },
+      {
+        "title": "DevBlog CMS",
+        "category": "Full-Stack",
+        "description": "A headless CMS for developers with MDX support, syntax highlighting, SEO automation, and a sleek admin dashboard.",
+        "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "DevBlog is a developer-first headless CMS with a rich MDX editor, auto-generated OG images, and built-in analytics. The admin dashboard provides real-time traffic stats and SEO scoring.",
+        "challenges": [
+          "Building a performant MDX editor with live preview",
+          "Automating OG image generation without a headless browser"
+        ],
+        "outcomes": [
+          "Reduced time-to-publish by 60% vs WordPress",
+          "Achieved 100/100 Lighthouse score on all posts"
+        ],
+        "tech": [
+          "Next.js",
+          "MDX",
+          "Prisma",
+          "PostgreSQL",
+          "Vercel"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": false
+      },
+      {
+        "title": "CryptoTrack Portfolio",
+        "category": "Finance",
+        "description": "A real-time crypto portfolio tracker with historical charts, price alerts, and tax reporting.",
+        "image": "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=800&h=500&fit=crop",
+        "screenshots": [
+          "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=900&h=500&fit=crop"
+        ],
+        "fullDescription": "CryptoTrack connects to major exchanges via API to aggregate your holdings in real time. It generates tax reports in multiple jurisdictions and supports 500+ coins.",
+        "challenges": [
+          "Real-time WebSocket price feeds from 8 exchanges simultaneously",
+          "Handling complex tax calculation rules across 30+ jurisdictions"
+        ],
+        "outcomes": [
+          "$2M+ in portfolio value tracked",
+          "Saved users an average of 4 hours on tax reporting"
+        ],
+        "tech": [
+          "React",
+          "Chart.js",
+          "CoinGecko API",
+          "Firebase"
+        ],
+        "liveUrl": "#",
+        "repoUrl": "#",
+        "featured": false
+      }
+    ]
+  },
+  "experience": [
+    {
+      "company": "TechVision Inc.",
+      "role": "Senior Full-Stack Developer",
+      "period": "2022 – Present",
+      "location": "San Francisco, CA",
+      "type": "Full-time",
+      "icon": "fa-building",
+      "logo": "https://ui-avatars.com/api/?name=TV&background=6366f1&color=fff&bold=true",
+      "description": "Lead development of core platform features, mentor junior developers, and drive performance improvements.",
+      "achievements": [
+        "Architected microservices migration cutting deploy time by 60%",
+        "Shipped 3 major features used by 100k+ users",
+        "Established code-review standards & testing guidelines"
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "AWS",
+        "PostgreSQL",
+        "Docker"
+      ]
+    },
+    {
+      "company": "Startup Lab",
+      "role": "Full-Stack Developer",
+      "period": "2020 – 2022",
+      "location": "Remote",
+      "type": "Full-time",
+      "icon": "fa-rocket",
+      "logo": "https://ui-avatars.com/api/?name=SL&background=8b5cf6&color=fff&bold=true",
+      "description": "Built MVPs for 5 startup clients from scratch, owning everything from DB design to CI/CD.",
+      "achievements": [
+        "Delivered 5 production apps on tight deadlines",
+        "Increased client conversion rate by 28% via UX improvements",
+        "Integrated payment gateways processing $2M+ in transactions"
+      ],
+      "tech": [
+        "Vue.js",
+        "Python",
+        "Firebase",
+        "GCP",
+        "Stripe"
+      ]
+    },
+    {
+      "company": "FreelanceDev",
+      "role": "Freelance Developer",
+      "period": "2019 – 2020",
+      "location": "Remote",
+      "type": "Freelance",
+      "icon": "fa-laptop-code",
+      "logo": "https://ui-avatars.com/api/?name=FD&background=ec4899&color=fff&bold=true",
+      "description": "Worked with international clients across web apps, WordPress themes, and browser extensions.",
+      "achievements": [
+        "Completed 25+ projects with a 5-star average rating",
+        "Built a browser extension with 5k+ active users",
+        "Developed custom WordPress plugins for e-commerce clients"
+      ],
+      "tech": [
+        "React",
+        "WordPress",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "company": "InternTech",
+      "role": "Software Engineering Intern",
+      "period": "2018 – 2019",
+      "location": "Palo Alto, CA",
+      "type": "Internship",
+      "icon": "fa-graduation-cap",
+      "logo": "https://ui-avatars.com/api/?name=IT&background=06b6d4&color=fff&bold=true",
+      "description": "Worked on consumer-facing features for a fintech SaaS product used by 200k users.",
+      "achievements": [
+        "Shipped 2 features that improved user engagement by 15%",
+        "Won internal hackathon with an AI budget-tracking feature"
+      ],
+      "tech": [
+        "Angular",
+        "Java",
+        "Spring Boot",
+        "MySQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "B.Sc. Computer Science",
+      "period": "2015 – 2019",
+      "gpa": "3.8 / 4.0",
+      "description": "Focused on algorithms, distributed systems, and human-computer interaction. Graduated with Honors.",
+      "logo": "https://ui-avatars.com/api/?name=UCB&background=003262&color=FDB515&bold=true",
+      "achievements": [
+        "Dean's List (3 years)",
+        "ACM Chapter President",
+        "Hackathon winner × 2"
+      ]
+    },
+    {
+      "institution": "Meta Front-End Developer",
+      "degree": "Professional Certificate",
+      "period": "2021",
+      "gpa": "",
+      "description": "Comprehensive front-end development program covering React, UX design principles, and modern web standards.",
+      "logo": "https://ui-avatars.com/api/?name=Meta&background=0a66c2&color=fff&bold=true",
+      "achievements": [
+        "Capstone project: 98/100",
+        "Top 5% graduate"
+      ]
+    }
+  ],
+  "certifications": {
+    "subtitle": "Verified credentials and recognitions from leading organisations",
+    "items": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "issuerLogo": "https://ui-avatars.com/api/?name=AWS&background=FF9900&color=fff&bold=true",
+        "date": "March 2023",
+        "credentialId": "AWS-SAA-C03-XXXXXX",
+        "verifyUrl": "#",
+        "badgeColor": "#FF9900"
+      },
+      {
+        "name": "Google Cloud Professional Developer",
+        "issuer": "Google Cloud",
+        "issuerLogo": "https://ui-avatars.com/api/?name=GCP&background=4285F4&color=fff&bold=true",
+        "date": "November 2022",
+        "credentialId": "GCP-PD-XXXXXX",
+        "verifyUrl": "#",
+        "badgeColor": "#4285F4"
+      },
+      {
+        "name": "Certified Kubernetes Administrator",
+        "issuer": "Cloud Native Computing Foundation",
+        "issuerLogo": "https://ui-avatars.com/api/?name=CKA&background=326CE5&color=fff&bold=true",
+        "date": "July 2022",
+        "credentialId": "CKA-XXXXXX",
+        "verifyUrl": "#",
+        "badgeColor": "#326CE5"
+      },
+      {
+        "name": "Meta Front-End Developer Certificate",
+        "issuer": "Meta (Coursera)",
+        "issuerLogo": "https://ui-avatars.com/api/?name=Meta&background=0a66c2&color=fff&bold=true",
+        "date": "April 2021",
+        "credentialId": "META-FE-XXXXXX",
+        "verifyUrl": "#",
+        "badgeColor": "#0a66c2"
+      },
+      {
+        "name": "Best Developer Award — HackSF 2022",
+        "issuer": "HackSF Hackathon",
+        "issuerLogo": "https://ui-avatars.com/api/?name=HSF&background=ec4899&color=fff&bold=true",
+        "date": "October 2022",
+        "credentialId": "",
+        "verifyUrl": "#",
+        "badgeColor": "#ec4899"
+      },
+      {
+        "name": "GitHub Campus Expert",
+        "issuer": "GitHub",
+        "issuerLogo": "https://ui-avatars.com/api/?name=GH&background=171515&color=fff&bold=true",
+        "date": "September 2019",
+        "credentialId": "GCE-XXXXXX",
+        "verifyUrl": "#",
+        "badgeColor": "#6366f1"
+      }
+    ]
+  },
+  "openSource": {
+    "subtitle": "I love giving back to the developer community",
+    "githubProfileUrl": "https://github.com",
+    "totalContributions": 1247,
+    "repos": [
+      {
+        "name": "react-neu",
+        "description": "A neumorphism UI component library for React with full TypeScript support and 50+ components.",
+        "language": "TypeScript",
+        "stars": 1820,
+        "forks": 214,
+        "url": "https://github.com"
+      },
+      {
+        "name": "fastapi-boilerplate",
+        "description": "Production-ready FastAPI boilerplate with JWT auth, PostgreSQL, Docker, and CI/CD pre-configured.",
+        "language": "Python",
+        "stars": 943,
+        "forks": 158,
+        "url": "https://github.com"
+      },
+      {
+        "name": "tailwind-neumorphism",
+        "description": "Tailwind CSS plugin that adds neumorphism utility classes for light and dark themes.",
+        "language": "JavaScript",
+        "stars": 672,
+        "forks": 89,
+        "url": "https://github.com"
+      },
+      {
+        "name": "node-rate-limiter-pro",
+        "description": "Flexible rate limiter for Express/Fastify supporting Redis, in-memory, and sliding windows.",
+        "language": "TypeScript",
+        "stars": 415,
+        "forks": 52,
+        "url": "https://github.com"
+      },
+      {
+        "name": "pg-query-builder",
+        "description": "Type-safe PostgreSQL query builder for Node.js with zero external dependencies.",
+        "language": "TypeScript",
+        "stars": 290,
+        "forks": 34,
+        "url": "https://github.com"
+      },
+      {
+        "name": "devops-toolkit",
+        "description": "A collection of battle-tested shell scripts and Terraform modules for rapid infra provisioning.",
+        "language": "Go",
+        "stars": 178,
+        "forks": 41,
+        "url": "https://github.com"
+      }
+    ]
+  },
+  "blog": {
+    "subtitle": "Thoughts on code, design, and the developer life",
+    "allPostsUrl": "https://dev.to",
+    "posts": [
+      {
+        "title": "Building Neumorphic UIs with Tailwind CSS",
+        "date": "May 12, 2026",
+        "tag": "CSS / Design",
+        "tagColor": "#8b5cf6",
+        "excerpt": "A deep dive into recreating the soft-UI neumorphism trend using only Tailwind utility classes, with light/dark mode support baked in.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=700&h=400&fit=crop",
+        "readTime": "8 min read"
+      },
+      {
+        "title": "Why I Chose Bun Over Node.js in 2026",
+        "date": "April 3, 2026",
+        "tag": "Backend",
+        "tagColor": "#06b6d4",
+        "excerpt": "After 6 months of running Bun in production, here's an honest performance comparison, gotchas, and migration tips for Node.js developers.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1555066931-bf19f8fd1085?w=700&h=400&fit=crop",
+        "readTime": "12 min read"
+      },
+      {
+        "title": "Mastering TypeScript Generics Once and for All",
+        "date": "March 15, 2026",
+        "tag": "TypeScript",
+        "tagColor": "#3178c6",
+        "excerpt": "Generics are the most powerful and most misunderstood feature in TypeScript. This guide demystifies them with practical, real-world examples.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=700&h=400&fit=crop",
+        "readTime": "10 min read"
+      },
+      {
+        "title": "The Complete Guide to React Server Components",
+        "date": "February 20, 2026",
+        "tag": "React",
+        "tagColor": "#61dafb",
+        "excerpt": "Server Components are now stable, but many developers are still confused about what they are, when to use them, and how they differ from SSR.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=700&h=400&fit=crop",
+        "readTime": "15 min read"
+      },
+      {
+        "title": "PostgreSQL vs MongoDB in 2026: A Real-World Comparison",
+        "date": "January 8, 2026",
+        "tag": "Databases",
+        "tagColor": "#f59e0b",
+        "excerpt": "I've built the same app with both databases. Here's an honest look at query performance, schema flexibility, and developer experience.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=700&h=400&fit=crop",
+        "readTime": "11 min read"
+      },
+      {
+        "title": "From Monolith to Microservices: Lessons Learned",
+        "date": "December 5, 2025",
+        "tag": "Architecture",
+        "tagColor": "#ec4899",
+        "excerpt": "We migrated a 5-year-old Rails monolith to microservices. Here are the 7 mistakes we made and what we'd do differently.",
+        "readMoreUrl": "#",
+        "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=700&h=400&fit=crop",
+        "readTime": "14 min read"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Sarah Chen",
+      "role": "CTO at TechVision",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face",
+      "quote": "Alex is one of the most talented developers I've worked with. Their ability to balance technical excellence with clear communication makes them invaluable.",
+      "rating": 5
+    },
+    {
+      "name": "Marcus Rodriguez",
+      "role": "Founder at Startup Lab",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
+      "quote": "Delivered every project on time and above expectations. Alex turned our vague ideas into polished, production-ready products. Would hire again in a heartbeat.",
+      "rating": 5
+    },
+    {
+      "name": "Emma Wilson",
+      "role": "Product Manager at Taskly",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+      "quote": "Working with Alex was a pleasure. They proactively identified edge cases and proposed solutions before they became problems. A true professional.",
+      "rating": 5
+    }
+  ],
+  "contact": {
+    "subtitle": "Have a project in mind? Let's discuss it. I'm always open to new opportunities.",
+    "contactInfo": [
+      {
+        "icon": "fa-envelope",
+        "label": "Email",
+        "value": "alex@example.com",
+        "href": "mailto:alex@example.com"
+      },
+      {
+        "icon": "fa-phone",
+        "label": "Phone",
+        "value": "+1 (555) 123-4567",
+        "href": "tel:+15551234567"
+      },
+      {
+        "icon": "fa-map-marker-alt",
+        "label": "Location",
+        "value": "San Francisco, CA",
+        "href": "#"
+      }
+    ]
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "label": "Skills",
+        "href": "#skills"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Certifications",
+        "href": "#certifications"
+      },
+      {
+        "label": "Open Source",
+        "href": "#opensource"
+      },
+      {
+        "label": "Blog",
+        "href": "#blog"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "ui": {
+    "splashMessages": [
+      "Loading...",
+      "Building UI...",
+      "Almost there...",
+      "Welcome, {name}!"
+    ],
+    "aboutTitle": "Who I Am",
+    "skillsTitle": "Skills & Technologies",
+    "projectsTitle": "Featured Projects",
+    "experienceTitle": "Work Experience",
+    "educationTitle": "Education",
+    "certificationsTitle": "Certifications & Awards",
+    "openSourceTitle": "Open-Source Contributions",
+    "blogTitle": "Articles & Blog",
+    "testimonialsTitle": "What People Say",
+    "contactTitle": "Let's Work Together",
+    "contactInfoTitle": "Contact Information",
+    "contactFollowLabel": "FOLLOW ME",
+    "contactSubmitLabel": "Send Message",
+    "contactSuccessMessage": "Message sent! I'll get back to you soon.",
+    "openSourceCounterLabel": "Total GitHub Contributions",
+    "openSourceProfileLabel": "View GitHub Profile",
+    "blogAllLabel": "Read All Articles",
+    "cvLabel": "Download CV",
+    "scrollLabel": "scroll",
+    "experienceScrollLabel": "← drag to scroll →",
+    "otherTechLabel": "// Also familiar with",
+    "aboutLabel": "About Me",
+    "skillsLabel": "Tech Stack",
+    "projectsLabel": "Portfolio",
+    "experienceLabel": "Career",
+    "educationLabel": "Academic",
+    "certificationsLabel": "Credentials",
+    "openSourceLabel": "Open Source",
+    "blogLabel": "Writing",
+    "testimonialsLabel": "Social Proof",
+    "contactLabel": "Get In Touch",
+    "formNameLabel": "Your Name",
+    "formEmailLabel": "Email Address",
+    "formSubjectLabel": "Subject",
+    "formMessageLabel": "Message",
+    "formNamePlaceholder": "John Doe",
+    "formEmailPlaceholder": "john@example.com",
+    "formSubjectPlaceholder": "Project Collaboration",
+    "formMessagePlaceholder": "Tell me about your project...",
+    "footerBuiltWith": "Built with ❤ & vanilla JS"
+  }
+}
