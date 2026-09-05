@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Portfolio content is loaded from the external JSON endpoint below.
   let portfolio;
-  const configUrl = document.currentScript?.dataset.config || 'data.json';
+  const configUrl = document.currentScript?.dataset.config || 'https://raw.githubusercontent.com/Godszeal/DevPortfolio/main/data.json';
   try {
     const response = await fetch(configUrl, { cache: 'no-store' });
     if (!response.ok) throw new Error(`Config request failed (${response.status})`);
